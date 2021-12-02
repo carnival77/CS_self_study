@@ -20,6 +20,27 @@ CS 전공 지식 스터디 총합 저장소
 
 ### Network
 
+[웹 통신의 큰 흐름](https://github.com/carnival77/CS_self_study/blob/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/%EC%9B%B9%20%ED%86%B5%EC%8B%A0%EC%9D%98%20%ED%81%B0%20%ED%9D%90%EB%A6%84.md)
+
+[OSI 7계층과 TCP/IP 4계층](https://github.com/carnival77/CS_self_study/blob/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/OSI%207%EA%B3%84%EC%B8%B5%EA%B3%BC%20TCP%20IP%204%EA%B3%84%EC%B8%B5.md)
+
+[TCP 3-way Handshake](https://github.com/carnival77/CS_self_study/blob/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/TCP%203-way%20Handshake.md)
+
+[TCP와 UDP의 비교](https://github.com/carnival77/CS_self_study/blob/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/TCP%EC%99%80%20UDP%EC%9D%98%20%EB%B9%84%EA%B5%90.md)
+
+[HTTP와 HTTPS](https://github.com/carnival77/CS_self_study/blob/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/HTTP%EC%99%80%20HTTPS.md)
+
+[SSL](https://github.com/carnival77/CS_self_study/blob/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/SSL.md)
+
+[HTTP 메소드](https://github.com/carnival77/CS_self_study/blob/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/HTTP%20%EB%A9%94%EC%86%8C%EB%93%9C.md)
+
+[DNS](https://github.com/carnival77/CS_self_study/blob/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/DNS.md)
+
+[REST,REST API, RESTful](https://github.com/carnival77/CS_self_study/blob/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/REST%2CREST%20API%2C%20RESTful.md)
+
+[쿠키와 세션](https://github.com/carnival77/CS_self_study/blob/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/%EC%BF%A0%ED%82%A4%EC%99%80%20%EC%84%B8%EC%85%98.md)
+
+
 ### Data Structure/Algorithm
 
 ### Java
