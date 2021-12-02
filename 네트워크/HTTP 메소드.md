@@ -95,7 +95,7 @@ HTTP Method는 크게 GET, POST, PUT, DELETE가 대표적이며,
 
   
 
-- 안정성 (Safe) : GET, HEAD, OPTIONS
+- 안전성 (Safe) : GET, HEAD, OPTIONS
 
   
 
