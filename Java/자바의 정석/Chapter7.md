@@ -1017,3 +1017,9 @@ new 구현인터페이스이름() {
 
 7_19 변환 후
 
+
+## Reference
+1. https://kevinntech.tistory.com/11?category=917070
+2. https://im-yeobi.io/posts/java/book/standard-of-java/ch07-oop-2/#21-%EC%98%A4%EB%B2%84%EB%9D%BC%EC%9D%B4%EB%94%A9%EC%9D%B4%EB%9E%80
+3. https://amacoding.tistory.com/10
+4. https://amacoding.tistory.com/11
