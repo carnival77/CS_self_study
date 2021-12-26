@@ -14,6 +14,17 @@ CS 전공 지식 스터디 총합 저장소
 
 [캐시](https://github.com/carnival77/CS_self_study/blob/main/OS/%EC%BA%90%EC%8B%9C.md)
 
+[CPU 스케쥴러](https://github.com/carnival77/CS_self_study/blob/main/OS/CPU%EC%8A%A4%EC%BC%80%EC%A4%84%EB%9F%AC.md)
+
+[스케줄러](https://github.com/carnival77/CS_self_study/blob/main/OS/%EC%8A%A4%EC%BC%80%EC%A4%84%EB%9F%AC.md)
+
+[가상 메모리](https://github.com/carnival77/CS_self_study/blob/main/OS/%EA%B0%80%EC%83%81%EB%A9%94%EB%AA%A8%EB%A6%AC.md)
+
+[동기와 비동기](https://github.com/carnival77/CS_self_study/blob/main/OS/%EB%8F%99%EA%B8%B0%EC%99%80%20%EB%B9%84%EB%8F%99%EA%B8%B0.md)
+
+
+
+
 ### DB
 
 [트랜잭션](https://github.com/carnival77/CS_self_study/blob/main/DB/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98.md)
@@ -44,6 +55,9 @@ CS 전공 지식 스터디 총합 저장소
 ### Data Structure/Algorithm
 
 ### Java
+
+[자바의 정석 - 챕터 6](https://github.com/carnival77/CS_self_study/blob/main/Java/%EC%9E%90%EB%B0%94%EC%9D%98%20%EC%A0%95%EC%84%9D/chapter6.md)
+[자바의 정석 - 챕터 6 연습 문제](https://github.com/carnival77/CS_self_study/blob/main/Java/%EC%9E%90%EB%B0%94%EC%9D%98%20%EC%A0%95%EC%84%9D/Chapter6_exercise.md)
 
 ### Spring
 
