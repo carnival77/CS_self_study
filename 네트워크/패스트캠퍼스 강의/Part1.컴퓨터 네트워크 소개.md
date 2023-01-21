@@ -1,52 +1,49 @@
-# Part 1. 컴퓨터 네트워크 소개
+- [1. 컴퓨터 네트워크와 인터넷](#1-컴퓨터-네트워크와-인터넷)
+  - [1.1. 네트워크와 인터넷](#11-네트워크와-인터넷)
+    - [1.1.1. 네트워크](#111-네트워크)
+    - [1.1.2. 인터넷](#112-인터넷)
+    - [1.1.3. OSI 7계층 (Layer)](#113-osi-7계층-layer)
+    - [1.1.4. TCP/IP (Transmission Control Protocol/Internet Protocol)](#114-tcpip-transmission-control-protocolinternet-protocol)
+  - [1.2. 그 밖에 자주 사용되는 용어들](#12-그-밖에-자주-사용되는-용어들)
+    - [1.2.1. IP 주소 (Address)](#121-ip-주소-address)
+    - [1.2.2. 패킷 교환 (Packet Switching)](#122-패킷-교환-packet-switching)
+  - [1.3. 통신을 위한 기본 동작](#13-통신을-위한-기본-동작)
+    - [1.3.1. 요청(Request)](#131-요청request)
+    - [1.3.2. 인지(Indicate)](#132-인지indicate)
+    - [1.3.3. 응답(Response)](#133-응답response)
+  - [1.4. 확인(Confirm)](#14-확인confirm)
+- [2. 네트워크의 유형](#2-네트워크의-유형)
+  - [2.1. LAN (Local Area Network)](#21-lan-local-area-network)
+  - [2.2. WAN (Wide Area Network)](#22-wan-wide-area-network)
+  - [2.3. 크기 유형](#23-크기-유형)
+- [3. 네트워크의 계층별 역할](#3-네트워크의-계층별-역할)
+  - [3.1. OSI(Open Systems Interconnection Reference Model) 7계층](#31-osiopen-systems-interconnection-reference-model-7계층)
+  - [3.2. OSI 7 계층과 TCP/IP의 관계](#32-osi-7-계층과-tcpip의-관계)
+  - [3.3. 종단 간의 연결](#33-종단-간의-연결)
+  - [3.4. 물리 계층(Physical Layer)](#34-물리-계층physical-layer)
+  - [3.5. 데이터 링크 계층(Data Link Layer)](#35-데이터-링크-계층data-link-layer)
+    - [3.5.1. 데이터 링크 - 노드 대 노드(Hop-to-Hop)의 전달 책임](#351-데이터-링크---노드-대-노드hop-to-hop의-전달-책임)
+    - [3.5.2. 데이터 링크 계층의 전달 요소](#352-데이터-링크-계층의-전달-요소)
+      - [3.5.2.1. 물리주소의 데이터 전달  과정](#3521-물리주소의-데이터-전달--과정)
+  - [3.6. 네트워크 계층(Network Layer)](#36-네트워크-계층network-layer)
+    - [3.6.1. 네트워크 계층 - 발신지 대 목적지 전달](#361-네트워크-계층---발신지-대-목적지-전달)
+    - [3.6.2. 네트워크 계층의 전달 흐름](#362-네트워크-계층의-전달-흐름)
+  - [3.7. 전송 계층(Transport Layer)](#37-전송-계층transport-layer)
+    - [3.7.1. 전송 층에서의 전달](#371-전송-층에서의-전달)
+      - [3.7.1.1. 메세지의 프로세스 대 프로세스 전달](#3711-메세지의-프로세스-대-프로세스-전달)
+      - [3.7.1.2. 전송 계층의 전달 예시](#3712-전송-계층의-전달-예시)
+  - [3.8. 세션 계층(Session layer)](#38-세션-계층session-layer)
+  - [3.9. 표현 계층(Presentation layer)](#39-표현-계층presentation-layer)
+  - [3.10. 응용 계층 (Application Layer)](#310-응용-계층-application-layer)
+  - [3.11. 각 계층과 프로토콜 비교](#311-각-계층과-프로토콜-비교)
+- [4. 추가 참고 자료](#4-추가-참고-자료)
 
-- [Part 1. 컴퓨터 네트워크 소개](#part-1-컴퓨터-네트워크-소개)
-  - [컴퓨터 네트워크와 인터넷](#컴퓨터-네트워크와-인터넷)
-    - [네트워크와 인터넷](#네트워크와-인터넷)
-      - [네트워크](#네트워크)
-      - [인터넷](#인터넷)
-      - [OSI 7계층 (Layer)](#osi-7계층-layer)
-      - [TCP/IP (Transmission Control Protocol/Internet Protocol)](#tcpip-transmission-control-protocolinternet-protocol)
-    - [그 밖에 자주 사용되는 용어들](#그-밖에-자주-사용되는-용어들)
-      - [IP 주소 (Address)](#ip-주소-address)
-      - [패킷 교환 (Packet Switching)](#패킷-교환-packet-switching)
-    - [통신을 위한 기본 동작](#통신을-위한-기본-동작)
-      - [요청(Request)](#요청request)
-      - [인지(Indicate)](#인지indicate)
-      - [응답(Response)](#응답response)
-    - [확인(Confirm)](#확인confirm)
-  - [네트워크의 유형](#네트워크의-유형)
-    - [LAN (Local Area Network)](#lan-local-area-network)
-    - [WAN (Wide Area Network)](#wan-wide-area-network)
-    - [크기 유형](#크기-유형)
-  - [네트워크의 계층별 역할](#네트워크의-계층별-역할)
-    - [OSI(Open Systems Interconnection Reference Model) 7계층](#osiopen-systems-interconnection-reference-model-7계층)
-    - [OSI 7 계층과 TCP/IP의 관계](#osi-7-계층과-tcpip의-관계)
-    - [종단 간의 연결](#종단-간의-연결)
-    - [물리 계층(Physical Layer)](#물리-계층physical-layer)
-    - [데이터 링크 계층(Data Link Layer)](#데이터-링크-계층data-link-layer)
-      - [데이터 링크 - 노드 대 노드(Hop-to-Hop)의 전달 책임](#데이터-링크---노드-대-노드hop-to-hop의-전달-책임)
-      - [데이터 링크 계층의 전달 요소](#데이터-링크-계층의-전달-요소)
-        - [물리주소의 데이터 전달  과정](#물리주소의-데이터-전달--과정)
-    - [네트워크 계층(Network Layer)](#네트워크-계층network-layer)
-      - [네트워크 계층 - 발신지 대 목적지 전달](#네트워크-계층---발신지-대-목적지-전달)
-      - [네트워크 계층의 전달 흐름](#네트워크-계층의-전달-흐름)
-    - [전송 계층(Transport Layer)](#전송-계층transport-layer)
-      - [전송 층에서의 전달](#전송-층에서의-전달)
-        - [메세지의 프로세스 대 프로세스 전달](#메세지의-프로세스-대-프로세스-전달)
-        - [전송 계층의 전달 예시](#전송-계층의-전달-예시)
-    - [세션 계층(Session layer)](#세션-계층session-layer)
-    - [표현 계층(Presentation layer)](#표현-계층presentation-layer)
-  - [응용 계층과 정리](#응용-계층과-정리)
-    - [응용 계층 (Application Layer)](#응용-계층-application-layer)
-    - [각 계층과 프로토콜 비교](#각-계층과-프로토콜-비교)
-      - [추가 참고 자료](#추가-참고-자료)
 
-## 컴퓨터 네트워크와 인터넷
+# 1. 컴퓨터 네트워크와 인터넷
 
-### 네트워크와 인터넷
+## 1.1. 네트워크와 인터넷
 
-#### 네트워크
+### 1.1.1. 네트워크
 
 - 종단 시스템(end system) : PC나 스마트폰처럼 네트워크 송수신 주체
 
@@ -54,7 +51,7 @@
 
 - 통신을 목적으로 실제 물리적으로 선으로 연결되어 있거나 무선으로 연결
 
-#### 인터넷
+### 1.1.2. 인터넷
 
 - 회사 혹은 소규모의 네트워크에서 전세계 네트워크와 연결된 상태
 
@@ -62,7 +59,7 @@
 
 - 종단 시스템은 보통 ISP(Internet Service Provider)에 의해 연결된다
 
-#### OSI 7계층 (Layer)
+### 1.1.3. OSI 7계층 (Layer)
 
 - 네트워크 구성 요소를 7개의 계층으로 역할을 나눈 표준 모델
 
@@ -70,65 +67,65 @@
 
 - 일부 하위 계층은 하드웨어에서 구현되며, 상위 계층은 소프트웨어로 구현
 
-#### TCP/IP (Transmission Control Protocol/Internet Protocol)
+### 1.1.4. TCP/IP (Transmission Control Protocol/Internet Protocol)
 
 - OSI 7계층이 나오기 전 널리 사용되던 사실상 표준 역할
 
 - 각 계층별 역할에 따라 역할이 나누어짐
 
-### 그 밖에 자주 사용되는 용어들
+## 1.2. 그 밖에 자주 사용되는 용어들
 
-#### IP 주소 (Address)
+### 1.2.1. IP 주소 (Address)
 
 - 통신 자료를 최종적으로 전달하기 위해 필요한 송/수신 위치 정보
 
 - 보통 IPv4 주소를 사용하며, 주소 부족을 해결하기 위해 IPv6가 개발됨
 
-#### 패킷 교환 (Packet Switching)
+### 1.2.2. 패킷 교환 (Packet Switching)
 
 - 종단 간에 전송되는 데이터를 **패킷(Packet)** 이라는 단위로 전달함
 
 - 패킷은 네트워크를 통해 일정한 순서 없이 보내지며 어떤 경로를 통해 이동되는지는 네트워크 상황에 따라 다르다.
 
-### 통신을 위한 기본 동작
+## 1.3. 통신을 위한 기본 동작
 
-#### 요청(Request)
+### 1.3.1. 요청(Request)
 
 전송하는 종단 장치에서 상대방에 서비스를 요청한다
 
-#### 인지(Indicate)
+### 1.3.2. 인지(Indicate)
 
 수신하는 장치에서 작업 요청(이벤트)을 확인한다
 
-#### 응답(Response)
+### 1.3.3. 응답(Response)
 
 수신하는 장치에서 요청 받은 작업에 대해 적절히 응답한다.
 
-### 확인(Confirm)
+## 1.4. 확인(Confirm)
 
 전송 측에서 응답 데이터를 최종적으로 확인한다.
 
-## 네트워크의 유형
+# 2. 네트워크의 유형
 
-### LAN (Local Area Network)
+## 2.1. LAN (Local Area Network)
 
 - 일정 그룹의 지역 네트워크 (집, 사무실, 학교 등)
 
 - 소규모로 묶이며 사설망 등을 연결해 구축
 
-### WAN (Wide Area Network)
+## 2.2. WAN (Wide Area Network)
 
 - 원거리 통신망으로 넓은 범위 연결 (국가, 대륙 등)
 
-### 크기 유형
+## 2.3. 크기 유형
 
 LAN < WAN < Internet
 
 ![image](https://user-images.githubusercontent.com/52997401/213849006-48332e46-f943-4ce6-89f7-08013bbe72a8.png)
 
-## 네트워크의 계층별 역할
+# 3. 네트워크의 계층별 역할
 
-### OSI(Open Systems Interconnection Reference Model) 7계층
+## 3.1. OSI(Open Systems Interconnection Reference Model) 7계층
 
 > OSI 7계층이란, 통신 접속에서 완료까지의 과정을 네트워크 통신을 구성하는 요소들에 따라 7단계로 정의한 국제 통신 표준 규약이다.
 > 
@@ -139,17 +136,17 @@ LAN < WAN < Internet
 - '프로토콜 스택' 혹은 '스택'은 이러한 계층들로 구성되는 프로토콜 시스템이 구현된 시스템을 가리키는데, 프로토콜 스택은 하드웨어나 소프트웨어 혹은 둘의 혼합으로 구현될 수 있다.
 - 일반적으로 하위 계층들은 하드웨어로, 상위 계층들은 소프트웨어로 구현된다.
 
-### OSI 7 계층과 TCP/IP의 관계
+## 3.2. OSI 7 계층과 TCP/IP의 관계
 
 ![](https://media.vlpt.us/images/jogiyo/post/0e189400-41bb-4f42-a4c0-e9b0564053d3/image.png)
 
 ![image](https://user-images.githubusercontent.com/52997401/213849086-d0a9d1be-1c03-433a-81ad-2294af0b0f19.png)
 
-### 종단 간의 연결
+## 3.3. 종단 간의 연결
 
 ![image](https://user-images.githubusercontent.com/52997401/213849153-234ef56a-af42-4b2a-bf5c-c7d05a40ca12.png)
 
-### 물리 계층(Physical Layer)
+## 3.4. 물리 계층(Physical Layer)
 
 - 개요
   
@@ -189,7 +186,7 @@ LAN < WAN < Internet
     
     - 16번까지 재시도
 
-### 데이터 링크 계층(Data Link Layer)
+## 3.5. 데이터 링크 계층(Data Link Layer)
 
 - 개요
   
@@ -236,13 +233,13 @@ LAN < WAN < Internet
   
   - 이더넷
 
-#### 데이터 링크 - 노드 대 노드(Hop-to-Hop)의 전달 책임
+### 3.5.1. 데이터 링크 - 노드 대 노드(Hop-to-Hop)의 전달 책임
 
 ![image](https://user-images.githubusercontent.com/52997401/213853445-97dddcc8-fa26-4654-afc7-3499214bfe07.png)
 
-#### 데이터 링크 계층의 전달 요소
+### 3.5.2. 데이터 링크 계층의 전달 요소
 
-##### 물리주소의 데이터 전달  과정
+#### 3.5.2.1. 물리주소의 데이터 전달  과정
 
 - 물리주소 10인 노드는 물리주소 87 인 노드에 프레임을 보낸다..
   
@@ -254,7 +251,7 @@ LAN < WAN < Internet
 
 ![image](https://user-images.githubusercontent.com/52997401/213855298-f9d612cc-f624-4686-ae5d-de4ac9c2d05a.png)
 
-### 네트워크 계층(Network Layer)
+## 3.6. 네트워크 계층(Network Layer)
 
 - 개요
   
@@ -300,15 +297,15 @@ LAN < WAN < Internet
         
         - Ex) 21DA:00D3:0000:2F3B:02AA:00FF:FE28:9C5A
 
-#### 네트워크 계층 - 발신지 대 목적지 전달
+### 3.6.1. 네트워크 계층 - 발신지 대 목적지 전달
 
 ![image](https://user-images.githubusercontent.com/52997401/213858193-19f3d67f-a8ed-4286-8626-7417adf299b5.png)
 
-#### 네트워크 계층의 전달 흐름
+### 3.6.2. 네트워크 계층의 전달 흐름
 
 ![image](https://user-images.githubusercontent.com/52997401/213858266-d1c43407-51bf-48a7-85e7-33530c1b7da2.png)
 
-### 전송 계층(Transport Layer)
+## 3.7. 전송 계층(Transport Layer)
 
 - 개요
   
@@ -368,17 +365,17 @@ LAN < WAN < Internet
     
     - UDP나 TCP와 유사하며 다중 연결을 지원한다.
 
-#### 전송 층에서의 전달
+### 3.7.1. 전송 층에서의 전달
 
-##### 메세지의 프로세스 대 프로세스 전달
+#### 3.7.1.1. 메세지의 프로세스 대 프로세스 전달
 
 ![image](https://user-images.githubusercontent.com/52997401/213858808-b1c44d3a-5d14-4fa9-b717-348f7b4d1628.png)
 
-##### 전송 계층의 전달 예시
+#### 3.7.1.2. 전송 계층의 전달 예시
 
 ![image](https://user-images.githubusercontent.com/52997401/213859080-2069dc52-4af5-429b-a15c-c76c7733257b.png)
 
-### 세션 계층(Session layer)
+## 3.8. 세션 계층(Session layer)
 
 - 개요
   
@@ -392,7 +389,7 @@ LAN < WAN < Internet
   
   - TCP/IP 세션을 만들고 없애는 책임을 진다.
 
-### 표현 계층(Presentation layer)
+## 3.9. 표현 계층(Presentation layer)
 
 - 개요
   
@@ -404,9 +401,7 @@ LAN < WAN < Internet
 
 - MIME 인코딩이나 암호화 등의 동작이 이 계층에서 이루어진다.
 
-## 응용 계층과 정리
-
-### 응용 계층 (Application Layer)
+## 3.10. 응용 계층 (Application Layer)
 
 - 개요
   
@@ -443,11 +438,11 @@ LAN < WAN < Internet
   
   - Tracerouter
 
-### 각 계층과 프로토콜 비교
+## 3.11. 각 계층과 프로토콜 비교
 
 ![image](https://user-images.githubusercontent.com/52997401/213859314-13a52a8f-1870-4729-99af-27baef34194d.png)
 
-##### 추가 참고 자료
+# 4. 추가 참고 자료
 
 https://velog.io/@jehjong/%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%9D%B8%ED%84%B0%EB%B7%B0-TCPIP-4%EA%B3%84%EC%B8%B5
 
