@@ -1,5 +1,16 @@
 # Key
 
+- [Key](#key)
+    - [Key란? 검색이나 정렬 시 Tuple을 구분할 수 있는 기준이 되는 Attribute.](#key란-검색이나-정렬-시-tuple을-구분할-수-있는-기준이-되는-attribute)
+  - [1. Candidate Key(후보키)](#1-candidate-key후보키)
+  - [2. Primary Key(기본키)](#2-primary-key기본키)
+  - [3. Alternate Key(대체키)](#3-alternate-key대체키)
+  - [4. Super Key(슈퍼키)](#4-super-key슈퍼키)
+  - [5. Foreignn Key(외래키)](#5-foreignn-key외래키)
+    - [Null 값?](#null-값)
+  - [참고](#참고)
+
+
 ### Key란? 검색이나 정렬 시 Tuple을 구분할 수 있는 기준이 되는 Attribute.
 
   
