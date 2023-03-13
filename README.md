@@ -7,7 +7,8 @@ CS 전공 지식 스터디 총합 저장소
     - [OS](#os)
     - [DB](#db)
     - [Network](#network)
-    - [Data Structure/Algorithm](#data-structurealgorithm)
+    - [Data Structure](#data-structure)
+    - [Algorithm](#algorithm)
     - [Web](#web)
       - [Servlet](#servlet)
       - [Spring](#spring)
@@ -88,7 +89,7 @@ CS 전공 지식 스터디 총합 저장소
 
 [Part1.컴퓨터 네트워크 소개](https://github.com/carnival77/self_study/blob/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/%ED%8C%A8%EC%8A%A4%ED%8A%B8%EC%BA%A0%ED%8D%BC%EC%8A%A4%20%EA%B0%95%EC%9D%98/Part1.%EC%BB%B4%ED%93%A8%ED%84%B0%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EC%86%8C%EA%B0%9C.md)
 
-### Data Structure/Algorithm
+### Data Structure
 
 [Array vs ArrayList vs Linked List](https://github.com/carnival77/self_study/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%2C%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/Array%20vs%20ArrayList%20vs%20Linked%20List.md)
 
@@ -104,17 +105,39 @@ CS 전공 지식 스터디 총합 저장소
 
 [그래프](https://github.com/carnival77/self_study/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%2C%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EA%B7%B8%EB%9E%98%ED%94%84.md)
 
-[다익스트라 알고리즘](https://github.com/carnival77/self_study/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%2C%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EB%8B%A4%EC%9D%B5%EC%8A%A4%ED%8A%B8%EB%9D%BC%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.md)
-
 [서로소 집합](https://github.com/carnival77/self_study/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%2C%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%84%9C%EB%A1%9C%EC%86%8C%20%EC%A7%91%ED%95%A9.md)
 
 [스택과 큐](https://github.com/carnival77/self_study/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%2C%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%8A%A4%ED%83%9D%EA%B3%BC%20%ED%81%90.md)
 
-[크루스칼 알고리즘](https://github.com/carnival77/self_study/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%2C%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%ED%81%AC%EB%A3%A8%EC%8A%A4%EC%B9%BC%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.md)
-
 [트라이(Trie)](https://github.com/carnival77/self_study/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%2C%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%ED%8A%B8%EB%9D%BC%EC%9D%B4(Trie).md)
 
+### Algorithm
+
+[BFS & DFS](https://github.com/carnival77/self_study/blob/main/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/BFS%20%26%20DFS.md)
+
+[GCD&LCM](https://github.com/carnival77/self_study/blob/main/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/GCD%26LCM.md)
+
+[거품 정렬(Bubble Sort)](https://github.com/carnival77/self_study/blob/main/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EA%B1%B0%ED%92%88%20%EC%A0%95%EB%A0%AC(Bubble%20Sort).md)
+
+[병합 정렬(Merge Sort)](https://github.com/carnival77/self_study/blob/main/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EB%B3%91%ED%95%A9%20%EC%A0%95%EB%A0%AC(Merge%20Sort).md)
+
+[삽입 정렬(Insertion Sort)](https://github.com/carnival77/self_study/blob/main/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%82%BD%EC%9E%85%20%EC%A0%95%EB%A0%AC(Insertion%20Sort).md)
+
+[선택 정렬(Selection Sort)](https://github.com/carnival77/self_study/blob/main/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%84%A0%ED%83%9D%20%EC%A0%95%EB%A0%AC(Selection%20Sort).md)
+
+[이분 탐색(Binary Search)](https://github.com/carnival77/self_study/blob/main/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%9D%B4%EB%B6%84%20%ED%83%90%EC%83%89(Binary%20Search).md)
+
+[퀵 정렬(Quick Sort)](https://github.com/carnival77/self_study/blob/main/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%ED%80%B5%20%EC%A0%95%EB%A0%AC(Quick%20Sort).md)
+
+[힙 정렬(Heap Sort)](https://github.com/carnival77/self_study/blob/main/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%ED%9E%99%20%EC%A0%95%EB%A0%AC(Heap%20Sort).md)
+
 [플로이드 워셜 알고리즘](https://github.com/carnival77/self_study/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%2C%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%ED%94%8C%EB%A1%9C%EC%9D%B4%EB%93%9C%20%EC%9B%8C%EC%85%9C%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.md)
+
+[크루스칼 알고리즘](https://github.com/carnival77/self_study/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%2C%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%ED%81%AC%EB%A3%A8%EC%8A%A4%EC%B9%BC%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.md)
+
+[다익스트라 알고리즘](https://github.com/carnival77/self_study/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%2C%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EB%8B%A4%EC%9D%B5%EC%8A%A4%ED%8A%B8%EB%9D%BC%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.md)
+
+
 
 ### Web
 
