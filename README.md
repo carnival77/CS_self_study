@@ -22,9 +22,6 @@ CS 전공 지식 스터디 총합 저장소
 
 [동기와 비동기](https://github.com/carnival77/CS_self_study/blob/main/OS/%EB%8F%99%EA%B8%B0%EC%99%80%20%EB%B9%84%EB%8F%99%EA%B8%B0.md)
 
-
-
-
 ### DB
 
 [트랜잭션](https://github.com/carnival77/CS_self_study/blob/main/DB/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98.md)
@@ -51,7 +48,6 @@ CS 전공 지식 스터디 총합 저장소
 
 [쿠키와 세션](https://github.com/carnival77/CS_self_study/blob/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/%EC%BF%A0%ED%82%A4%EC%99%80%20%EC%84%B8%EC%85%98.md)
 
-
 ### Data Structure/Algorithm
 
 ### Java
@@ -61,10 +57,7 @@ CS 전공 지식 스터디 총합 저장소
 
 ### Spring
 
-
 ## 질문 리스트
-
-
 
 ### 네트워크
 
@@ -193,7 +186,6 @@ CS 전공 지식 스터디 총합 저장소
   ...
 </details>
 
-
 <details>
   <summary>웹 서버 소프트웨어(Apache, Nginx)의 서버 간 라우팅 기능은 OSI 7계층 중 어디서 작동하는지 설명해보세요.</summary>
   ...
@@ -265,7 +257,7 @@ CS 전공 지식 스터디 총합 저장소
 <details>
   <summary>Thread-safe 하다는 의미와 설계하는 법을 설명해보세요.</summary>
   </br>
-  <p>두 개 이상의 스레드가 race condition에 들어가거나 같은 객체에 동시에 접근해도 연산결과의 정합성이 보장될 수 있게끔 메모리 가시성이 확보된 상태를 의미합니다.</p>
+  <p>thred safe란 멀티스레드 프로그래밍에서 일반적으로 여러 스레드가 같은 객체에 동시에 접근하거나 race condition에 들어가도 프로그램의 실행에 문제가 없는 상태를 의미합니다. 이를 위해서는 공유자원의 사용을 최대한 줄여 각각의 스레드에서만 접근 가능한 저장소를 사용하는 것이 좋습니다. 공유 자원을 사용할 경우 상호 배제를 위해 뮤텍스를 사용하거나 syncronized 블럭에서 연산을 수행하는 방법으로 thread safe하게 설계할 수 있습니다.</p>
   <ul>
     <li>java.util.concurrent 패키지 하위의 클래스를 사용합니다.</li>
     <li>인스턴스 변수를 두지 않습니다.</li>
@@ -598,7 +590,6 @@ CS 전공 지식 스터디 총합 저장소
   </br>
   <p></p>
 </details>
-
 
 ### Java
 
