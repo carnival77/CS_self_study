@@ -12,6 +12,7 @@ CS 전공 지식 스터디 총합 저장소
       - [Servlet](#servlet)
       - [Spring](#spring)
     - [Java](#java)
+      - [자바의 정석](#자바의-정석)
   - [질문 리스트](#질문-리스트)
     - [네트워크](#네트워크)
     - [운영체제](#운영체제)
@@ -20,6 +21,13 @@ CS 전공 지식 스터디 총합 저장소
     - [Java](#java-1)
       - [Spring](#spring-1)
       - [JPA](#jpa)
+  - [기타](#기타)
+    - [트러블 슈팅](#트러블-슈팅)
+    - [디자인 패턴](#디자인-패턴)
+    - [테스트](#테스트)
+    - [인프라/클라우드](#인프라클라우드)
+    - [컨테이너](#컨테이너)
+    - [DevOps](#devops)
 
 
 ## 정리 내용
@@ -82,6 +90,32 @@ CS 전공 지식 스터디 총합 저장소
 
 ### Data Structure/Algorithm
 
+[Array vs ArrayList vs Linked List](https://github.com/carnival77/self_study/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%2C%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/Array%20vs%20ArrayList%20vs%20Linked%20List.md)
+
+[B+Tree](https://github.com/carnival77/self_study/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%2C%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/B%2BTree.md)
+
+[Btree](https://github.com/carnival77/self_study/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%2C%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/Btree.md)
+
+[Hash](https://github.com/carnival77/self_study/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%2C%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/Hash.md)
+
+[Tree](https://github.com/carnival77/self_study/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%2C%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/Tree.md)
+
+[heap](https://github.com/carnival77/self_study/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%2C%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/heap.md)
+
+[그래프](https://github.com/carnival77/self_study/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%2C%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EA%B7%B8%EB%9E%98%ED%94%84.md)
+
+[다익스트라 알고리즘](https://github.com/carnival77/self_study/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%2C%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EB%8B%A4%EC%9D%B5%EC%8A%A4%ED%8A%B8%EB%9D%BC%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.md)
+
+[서로소 집합](https://github.com/carnival77/self_study/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%2C%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%84%9C%EB%A1%9C%EC%86%8C%20%EC%A7%91%ED%95%A9.md)
+
+[스택과 큐](https://github.com/carnival77/self_study/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%2C%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%8A%A4%ED%83%9D%EA%B3%BC%20%ED%81%90.md)
+
+[크루스칼 알고리즘](https://github.com/carnival77/self_study/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%2C%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%ED%81%AC%EB%A3%A8%EC%8A%A4%EC%B9%BC%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.md)
+
+[트라이(Trie)](https://github.com/carnival77/self_study/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%2C%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%ED%8A%B8%EB%9D%BC%EC%9D%B4(Trie).md)
+
+[플로이드 워셜 알고리즘](https://github.com/carnival77/self_study/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%2C%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%ED%94%8C%EB%A1%9C%EC%9D%B4%EB%93%9C%20%EC%9B%8C%EC%85%9C%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.md)
+
 ### Web
 
 [웹 통신의 큰 흐름](https://github.com/carnival77/CS_self_study/blob/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/%EC%9B%B9%20%ED%86%B5%EC%8B%A0%EC%9D%98%20%ED%81%B0%20%ED%9D%90%EB%A6%84.md)
@@ -112,9 +146,32 @@ CS 전공 지식 스터디 총합 저장소
 [Spring_CORS](https://github.com/carnival77/self_study/blob/main/Web/Spring/Spring_CORS.md)
 ### Java
 
+[JVM 구조와 Java 실행과정](https://github.com/carnival77/self_study/blob/main/Java/JVM%20%EA%B5%AC%EC%A1%B0%EC%99%80%20Java%20%EC%8B%A4%ED%96%89%EA%B3%BC%EC%A0%95.md)
+
+[어노테이션](https://github.com/carnival77/self_study/blob/main/Java/%EC%96%B4%EB%85%B8%ED%85%8C%EC%9D%B4%EC%85%98.md)
+
+[오버라이딩과 오버로딩 차이](https://github.com/carnival77/self_study/blob/main/Java/%EC%98%A4%EB%B2%84%EB%9D%BC%EC%9D%B4%EB%94%A9%EA%B3%BC%20%EC%98%A4%EB%B2%84%EB%A1%9C%EB%94%A9%20%EC%B0%A8%EC%9D%B4.md)
+
+[접근 제어자](https://github.com/carnival77/self_study/blob/main/Java/%EC%A0%91%EA%B7%BC%20%EC%A0%9C%EC%96%B4%EC%9E%90.md)
+
+[추상클래스_인터페이스](https://github.com/carnival77/self_study/blob/main/Java/%EC%B6%94%EC%83%81%ED%81%B4%EB%9E%98%EC%8A%A4_%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4.md)
+
+[강한결합과 느슨한결합](https://github.com/carnival77/self_study/blob/main/Java/%EA%B0%95%ED%95%9C%EA%B2%B0%ED%95%A9%EA%B3%BC%20%EB%8A%90%EC%8A%A8%ED%95%9C%EA%B2%B0%ED%95%A9.md)
+
+[제네릭](https://github.com/carnival77/self_study/blob/main/Java/%EC%A0%9C%EB%84%A4%EB%A6%AD.md)
+
+[Java8에 추가된 기능](https://github.com/carnival77/self_study/blob/main/Java/Java8%EC%97%90%20%EC%B6%94%EA%B0%80%EB%90%9C%20%EA%B8%B0%EB%8A%A5.md)
+
+[mutableAndImmutable](https://github.com/carnival77/self_study/blob/main/Java/mutableAndImmutable.md)
+
+#### 자바의 정석
+
 [자바의 정석 - 챕터 6](https://github.com/carnival77/CS_self_study/blob/main/Java/%EC%9E%90%EB%B0%94%EC%9D%98%20%EC%A0%95%EC%84%9D/chapter6.md)
 [자바의 정석 - 챕터 6 연습 문제](https://github.com/carnival77/CS_self_study/blob/main/Java/%EC%9E%90%EB%B0%94%EC%9D%98%20%EC%A0%95%EC%84%9D/Chapter6_exercise.md)
 
+[Chapter12_제너릭_열거형_애너테이션](https://github.com/carnival77/self_study/blob/main/Java/%EC%9E%90%EB%B0%94%EC%9D%98%20%EC%A0%95%EC%84%9D/Chapter12_%EC%A0%9C%EB%84%88%EB%A6%AD_%EC%97%B4%EA%B1%B0%ED%98%95_%EC%95%A0%EB%84%88%ED%85%8C%EC%9D%B4%EC%85%98.md)
+
+[Chapter11_컬렉션프레임워크](https://github.com/carnival77/self_study/blob/main/Java/%EC%9E%90%EB%B0%94%EC%9D%98%20%EC%A0%95%EC%84%9D/Chapter11_%EC%BB%AC%EB%A0%89%EC%85%98%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC.md)
 
 ## 질문 리스트
 
@@ -1038,4 +1095,162 @@ CS 전공 지식 스터디 총합 저장소
   <p>JPA와 관련된 단골문제입니다. 꼭 학습해둡시다.</p>
   <p>N + 1 쿼리는 JPA의 프록시로 인한 지연 로딩 때문에 발생합니다. 정확한 의미는 1개의 쿼리를 실행했을 때, 내부에 존재하는 컬렉션들을 조회해오면서 생기는 문제입니다. 기본적으로 되도록이면 @OneToMany의 매핑을 하지 않을 수 있다면 하지 않는 것이 최고의 예방책입니다.</p>
   <p>만약 그런 객체를 가져와야 하는 경우 Fetch Join이라고 하는 JPQL의 join fetch를 사용합니다. 쿼리 한 번으로 해결할 수 있고, 또 다른 방법으로는 EntityGraph를 사용하는 방법이 있습니다.</p>
+</details>
+
+## 기타
+
+### 트러블 슈팅
+
+<details>
+  <summary>대용량 트래픽에서 장애가 발생하면 어떻게 대응할 것인가요?</summary>
+  </br>
+  <p>캐쉬에서 트래픽이 감당이 안되거나 오류가 나면 DB에서 조회하게끔 서킷브레이커를 걸어서 다른 방법으로 우회하도록 제공할 것입니다.</p>
+</details>
+
+### 디자인 패턴
+
+<details>
+  <summary>싱글톤 패턴에 대해서 설명해주세요.(생각보다 어려움)</summary>
+  </br>
+  <p>전역 변수를 사용하지 않고 객체를 하나만 생성하도록 하며, 생성된 객체를 어디에서든지 참조할 수 있도록 하는 패턴입니다.</p>
+  <p>하나의 인스턴스만을 생성하며 getInstance메서드로 모든 클라이언트에게 동일한 인스턴스를 반환합니다.</p>
+  <p>private 생성자를 가지는 특징을 가지며, 생성된 싱글톤 오브젝트는 저장할 수 있는 자신과 같은 타입의 스태틱 필드를 정의합니다.</p>
+  <p>싱글톤 패턴의 문제점은 다음과 같습니다.</p>
+  <ul>
+    <li>의존 관계상 클라이언트가 구체 클래스에 의존합니다.</li>
+    <li>private 생성자 때문에 테스트가 어렵습니다.</li>
+    <li>객체 인스턴스를 하나만 생성해서 공유하는 방식 때문에 싱글톤 객체를 stateful하게 설계 했을 경우 큰 장애 발생요인이 됩니다.</li>
+  </ul>
+  <p>싱글톤의 단점을 해결하기 위해 무상태(stateless)로 설계해야 합니다.</p>
+  <ul>
+    <li>특정 클라이언트에 의존적인 필드가 있으면 안됩니다.</li>
+    <li>특정 클라이언트가 값을 변경할 수 있는 필드가 있으면 안됩니다.</li>
+    <li>가급적 읽기 전용으로 만들고, 필드 대신에 자바에서 공유되지 않는 지역변수, 파라미터, ThreadLocal 등을 사용합니다.</li>
+  </ul>
+</details>
+
+<details>
+  <summary>가교 패턴(브릿지 패턴)에 대해서 설명해주세요.</summary>
+  </br>
+  <p>가교 패턴은 추상부와 구현부를 분리하는 디자인 패턴입니다. 해당 패턴에서 기능은 인터페이스를 통해 정의 및 이용되고 해당 인터페이스를 따르는 클래스를 통해 구현됩니다. 해당 패턴을 통해서 사용자는 추상부와 구현부를 독립적으로 수정 및 확장할 수 있습니다. 가교 패턴은 객체지향 설계의 SOLID 원칙 중 단일 책임 원칙(SRP)과 개방 폐쇄 원칙(OCP)에 부합한 패턴입니다.</p>
+</details>
+
+<details>
+  <summary>전략 패턴에 대해서 설명해주세요.</summary>
+  </br>
+  <p>전략 패턴은 알고리즘을 객체 단위로 캡슐화하는 디자인 패턴입니다. 해당 패턴에서 알고리즘은 인터페이스를 통해 정의 및 이용되고 해당 인터페이스를 따르는 클래스를 통해 구현됩니다. 해당 패턴을 통해서 사용자는 알고리즘을 필요에 따라 바꿔서 사용할 수 있게 됩니다. 전략 패턴은 객체지향 설계의 SOLID 원칙 중 개방 폐쇄 원칙(OCP)에 부합한 패턴입니다.</p>
+  <p>전략 패턴은 가교 패턴과 구조가 비슷하지만 목적에 차이가 있습니다. 가교 패턴이 추상과 구현의 분리를 통한 독립적 개발의 용이성에 중점을 둔다면 전략 패턴은 알고리즘의 캡슐화를 통한 알고리즘 변경의 유연성에 중점을 둡니다.</p>
+</details>
+
+<details>
+  <summary>빌더 패턴에 대해서 설명해주세요.</summary>
+  </br>
+  <p></p>
+</details>
+
+<details>
+  <summary>팩토리 메서드 패턴에 대해서 설명해주세요.</summary>
+  </br>
+  <p></p>
+</details>
+
+<details>
+  <summary>퍼사드 패턴에 대한 예를 들어주세요.</summary>
+  </br>
+  <p>바운디드 컨텍스트로 구분된 각각의 독립적인 애플리케이션을 UI 서버를 통해 파사드 역할을 담당하도록 두고 각 바운디드 컨텍스트에서 UI 서버와 통신하기 위해 HTTP, Protobuf, Thrift와 같은 방식을 이용할 수 있습니다.</p>
+</details>
+
+### 테스트
+
+<details>
+  <summary>테스트 코드에 대해서 어떻게 생각하고, 작성하나요?</summary>
+  </br>
+  <p></p>
+</details>
+
+<details>
+  <summary>TDD를 알고 있나요? TDD에 대해서 어떻게 생각하나요?</summary>
+  </br>
+  <p></p>
+</details>
+
+<details>
+  <summary>테스트 커버리지에 대해서 어떻게 생각하나요?</summary>
+  </br>
+  <p>라인 커버리지, 브랜치 커버리지를 높은 수치로 달성하는 것은 바람직하지 않다고 생각합니다. 핵심 비즈니스 로직의 패스 커버리지를 갖는 것이 라인 커버리지, 브랜치 커버리지를 높은 수치로 유지하는 것보다 낫다고 생각합니다. 또한 무의미한 테스트 코드를 작성함으로써 유지보수 비용을 발생시키거나 읽기 좋은 코드를 테스트 커버리지를 채우기 위해 수정하는 등의 일은 반드시 피해야 한다고 생각합니다.</p>
+</details>
+
+### 인프라/클라우드
+
+<details>
+  <summary>AWS 인프라를 구축해보았다면 설명해주세요.</summary>
+  </br>
+  <p></p>
+</details>
+
+<details>
+  <summary>로드 밸런서에 대해서 설명해주세요.</summary>
+  </br>
+  <p></p>
+</details>
+
+<details>
+  <summary>리버스 프록시에 대해서 설명해주세요.</summary>
+  </br>
+  <p></p>
+</details>
+
+<details>
+  <summary>Fault-tolerant(무정지) 시스템으로 가기 위해 필요한 방법에 대한 생각을 말해주세요. </summary>
+  </br>
+  <p>다운 타임이 발생하지 않도록 두 대 이상의 서버를 서비스해야 하고 비용 절감을 위해 배포할 때에만 새롭게 서비스를 띄우고, 배포가 완료된 후에는 기존 서버는 셧다운 시키면 됩니다.</p>
+  <p>무정지 배포 방법 Rolling </br>
+  로드 밸런서에서 서버를 빼고, 배포하고 다시 넣는 작업이 각 서버마다 이루어지도록 합니다. </br>
+  Rolling 배포의 단점은 배포할 서버가 너무 많다면, n대 단위로 배포하기도 하는데 배포가 모두 끝나기 전까지 클라이언트 중 누구는 이전 서비스를 제공 받고 누구는 신규 서비스를 제공 받게 되는 문제가 발생합니다. 또한 1대에 배포하는 것보다 최소 2배 이상 느립니다.
+  </p>
+  <p>무정지 배포 방법 Canary </br>
+  소수의 유저(혹은 사내)만 사용하는 환경(Canary 환경)에 신규 버전을 배포하고 문제가 없다고 판단됐을 때 다른 모든 서버에 배포합니다.
+  </p>
+  <p>무정지 배포 방법 Blue/Green </br>
+  실제로 서비스 중인 환경(Blue)과 새롭게 배포할 환경(Green)을 세트로 준비해서 배포하는 형식입니다. </br>
+  새롭게 배포할 환경에만 배포하면 되기 때문에 배포 속도가 매우 빠르며, 언제나 Green 환경이 실행 중이기 때문에 만약 잘못된 버전으로 배포 했을 경우 신속하게 롤백이 가능합니다. </br>
+  Blue/Green 배포의 단점은 Green 환경이 항상 실행 중이어야 하기 때문에 비용이 많이 발생합니다.
+  </p>
+</details>
+
+### 컨테이너
+
+제가 아직 도커, 쿠버네티스에 익숙하지 않아 공부가 좀 더 필요합니다.  
+관련해서 질문을 받아본적은 없으나, 일반적인 질문을 담아보았습니다.
+
+<details>
+  <summary>Docker란 무엇이고 컨테이너 가상화를 왜 사용할까요?</summary>
+  </br>
+  <p></p>
+</details>
+
+<details>
+  <summary>컨테이너 환경에서의 디버깅은 어떤식으로 하며 상대적으로 어려운 점은 무엇인가요?</summary>
+  </br>
+  <p></p>
+</details>
+
+### DevOps
+
+DevOps는 어쩌면 신입에겐 물어보지 않을 수도 있습니다. 하지만 DevOps가 무엇인지 정도는 알아두는게 좋을 것 같습니다.
+
+<details>
+  <summary>CI/CD가 무엇인가요? 왜 CI/CD가 장점이 될까요?</summary>
+  </br>
+  <p>보통 이 질문을 하는 동시에 어떤 CI/CD를 써봤는지 질문을 할 것입니다. 그때 썼던 CI/CD툴을 설명하고, 그 툴의 장단점을 설명하면 좋습니다.</p>
+  <p>코드 버전 관리를 하는 VCS 시스템에 push가 되면 테스트와 빌드가 수행되어 안정적인 배포파일을 만드는 과정을 CI(지속적 통합, continuous integration)이라고 하며, 이 빌드 결과를 자동으로 운영 서버에 배포까지 되는 과정을 CD(지속적 배포, continuous delivery or continuous deployment)라고 합니다.</p>
+  <p>푸시가 될 때마다 코드를 병합하고, 테스트 코드와 빌드를 수행하면서 자동으로 코드가 통합되어 더는 수동으로 코드를 통합할 필요가 없어져 개발에만 신경을 쓸 수 있습니다.</p>
+  <p>이 CI / CD의 중요한 것은 테스트 자동화입니다. 프로젝트의 완전한 상태임을 보장하기 위해 테스트 코드가 구현되어 있어야 합니다.</p>
+</details>
+
+<details>
+  <summary>DevOps가 무엇인지 설명해주세요.</summary>
+  </br>
+  <p>DevOps는 애플리케이션과 서비스를 빠른 속도로 제공할 수 있도록 조직의 역량을 향상시키는 문화와 방식이며 자동화, 측정, 공유를 수행하고 이 모든 것들을 축적해나가는 것입니다.</p>
+  <p>DevOps를 수행하면, 기존의 개발 및 인프라 관리 프로세스를 사용하는 조직보다 제품을 더 빠르게 혁신하고 개선할 수 있습니다. 이를 통해서 고객 친화적이고, 시장에 효과적으로 대응할 수 있는 유연성을 얻을 수 있습니다.</p>
 </details>
