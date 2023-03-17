@@ -31,10 +31,15 @@
       - [관점의 구분](#관점의-구분)
       - [AOP 목적](#aop-목적)
       - [AOP 주요 용어](#aop-주요-용어)
-      - [AOP 적용 방법](#aop-적용-방법)
+      - [Weaving 구분](#weaving-구분)
+      - [AOP 프레임워크](#aop-프레임워크)
       - [Spring AOP의 구현 방식](#spring-aop의-구현-방식)
       - [Advice 종류](#advice-종류)
       - [Spring AOP 특징](#spring-aop-특징)
+    - [스프링으로 작업 스케쥴링하기](#스프링으로-작업-스케쥴링하기)
+      - [@Scheduled로 작업 스케쥴링하기](#scheduled로-작업-스케쥴링하기)
+      - [@Async를 사용해 비동기식으로 작업 실행하기](#async를-사용해-비동기식으로-작업-실행하기)
+      - [작업 실행자](#작업-실행자)
   - [Spring MVC](#spring-mvc)
     - [3계층 아키텍쳐](#3계층-아키텍쳐)
     - [DAO와 DTO의 차이](#dao와-dto의-차이)
@@ -465,6 +470,7 @@
 
      - Advice가 적용될 위치
        - 타겟 겟체가 구현한 인터페이스의 모든 메소드는 조인 포인트의 후보다.
+       - 조인포인트를 사용해 메소드의 세부 정보(이름과 인수)를 얻을 수 있다.
 
         - ex. 메소드 진입 시, 생성자 호출 시, 필드에서 값 꺼낼 때 등
 
@@ -481,27 +487,38 @@
 
      - PointCut에 의해 결정된 Target의 JoinPoint에 Advice를 삽입하는 과정
 
-#### AOP 적용 방법
+#### Weaving 구분
 
-  1. 컴파일 시 적용
+1. 컴파일 타임 위빙
+   1. 자바 파일을 클래스 파일로 만들 때 Advice 소스가 추가되어 조작된 바이트 코드 생성하는 방법
+   2. 입력은 소스 코드고 출력은 위빙이 있는 컴파일된 클래스이다.
+   3. AspectJ가 사용하는 방법
 
-     - AspectJ가 사용하는 방법
+2. 바이너리 위빙
+   1. 컴파일 후 컴파일 된 클래스를 로딩하는 시점에 Advice 소스를 끼워넣는 방법
+   2. 코드가 컴파일된 후에 수행된다.
+   3. 입력은 컴파일된 클래스 파일 또는 jar 파일이고 출력은 위빙이 있는 컴파일된 클래스나 jar 파일이다.
+   4. AspectJ가 사용하는 방법
 
-     - 자바 파일을 클래스 파일로 만들 때 Advice 소스가 추가되어 조작된 바이트 코드 생성하는 방법
+3. 런타임 위빙
+   1. 클래스가 JVM에 로드되기 직전에 수행된다.
+   2. **Spring AOP**가 사용하는 방법
+   3. 스프링은 런타임 시 Bean 생성
+   4. A라는 Bean 만들 때 A라는 타입의 프록시 Bean도 생성하고, 프록시 Bean이 A의 메소드 호출 직전에 Advice 소스를 호출한 후 A의 메소드 호출
 
-  2. 로드 시 적용
+#### AOP 프레임워크
 
-     - AspectJ가 사용하는 방법
+- AspectJ
+  - 컴파일 타임 위빙을 제공한다.
+  - 위빙을 수행하기 위해 AspectJ 컴파일러를 빌드 프로세스에 추가할 수 있다.
+- 스프링 AOP
+  - AspectJ와 자체의 몇 가지 기본 AOP 기능과의 통합을 제공한다.
+  - 런타임 위빙을 수행한다.
+  - 스프링 빈에서 메소드 호출만 인터셉트할 수 있다.
 
-     - 컴파일 후 컴파일 된 클래스를 로딩하는 시점에 Advice 소스를 끼워넣는 방법
+스프링 빈으로 작업 중이고 스프링 빈에서 메소드 호출을 인터셉트하려는 경우, 스프링 AOP면 충분하다. 
 
-  3. 런타임 시 적용
-
-    -  **Spring AOP**가 사용하는 방법
-
-    - 스프링은 런타임 시 Bean 생성
-
-    - A라는 Bean 만들 때 A라는 타입의 프록시 Bean도 생성하고, 프록시 Bean이 A의 메소드 호출 직전에 Advice 소스를 호출한 후 A의 메소드 호출
+스프링 컨테이너에 의해 관리되지 않는 객체의 메소드 호출을 가로채려면 AspectJ를 사용해야 한다.
 
 #### Spring AOP의 구현 방식
   - XML 기반 POJO 클래스 이용
@@ -512,16 +529,19 @@
    - XML 설정 파일에 <aop:aspectj-autoproxy /> 설정
 
 #### Advice 종류
-  - Around
+  - @Around
     - 타겟의 메소드가 호출되기 이전/이후 시점에 모두 처리해야 할 부가기능 정의
     - 조인포인트 앞/뒤에서 실행되는 어드바이스
-  - Before
+  - @Before
     - 타겟의 메소드가 호출되기 이전 시점에 모두 처리해야 할 부가기능 정의
     - 조인포인트 앞에서 실행되는 어드바이스
-  - After Returning
+  - @After
+    - 타겟의 메소드가 호출되기 이후 시점에 모두 처리해야 할 부가기능 정의
+    - 조인포인트 뒤에서, 즉 메소드 실행 후, 메소드가 예외를 발생시키더라도 실행된다.
+  - @After Returning
     - 타겟의 메소드가 실행된 이후 시점에 모두 처리해야 할 부가기능 정의
     - 조인포인트 실행 종료된 이후 실행되는 어드바이스
-  - After Throwning
+  - @After Throwning
     - 타겟의 메소드가 예외를 발생한 이후 시점에 모두 처리해야 할 부가기능 정의 
     - 예외가 던져질 때 실행되는 어드바이스
 
@@ -558,6 +578,68 @@
 > - [[Spring] AOP란?](https://velog.io/@max9106/Spring-AOP%EB%9E%80-93k5zjsm95)
 
 > - [Spring AOP, Aspect 개념 특징, AOP 용어 정리](https://shlee0882.tistory.com/206)
+
+### 스프링으로 작업 스케쥴링하기
+
+스프링은 정기적으로 빈 메소드를 실행할 수 있는 스케쥴링 기능을 제공한다.
+
+#### @Scheduled로 작업 스케쥴링하기
+
+빈 컴포넌트의 특정 메소드에 @Scheduled 어노테이션을 추가하고, 스프링 부트 애플리케이션 클래스에 @EnableScheduling 어노테이션을 추가해 작업을 스케쥴링할 수 있다.
+
+```java 
+@Component
+public class Task {
+
+    private static final Logger log = LoggerFactory.getLogger(Task.class);
+
+    @Scheduled(fixedRate = 10000)
+    //fixedDelay=10000
+    //initialDelay=20000
+    //cron="*/5 * * * * MON-FRI") //CRON EXPRESSION
+    public void execute() {
+        log.info("The time is now {}", new Date());
+    }
+}
+
+@EnableScheduling
+public class TaskSchedulingApplication implements CommandLineRunner{}
+```
+
+빈이 스프링 컨테이너에 의해 관리되면 @Scheduled(fixedRate = 10000)는 execute 메소드가 10000ms 마다 한 번씩 실행되도록 한다.
+
+#### @Async를 사용해 비동기식으로 작업 실행하기
+
+빈 컴포넌트의 특정 메소드에 @Async 어노테이션을 추가하고, 스프링 부트 애플리케이션 클래스에 @EnableAsync 어노테이션을 추가해 작업을 스케쥴링할 수 있다.
+
+```java
+@Component
+public class AsyncTask {
+	
+	private Logger logger = LoggerFactory.getLogger(this.getClass());
+	
+	@Async
+	void doThisAsynchronously() {
+		IntStream.range(1, 100).forEach(x -> logger.info("AsyncTask {}",x));
+	}
+	
+	@Async
+	Future<Long> doThisAsynchronouslyAndReturnAValue() {
+		IntStream.range(1, 100).forEach(x -> logger.info("AsyncTask With Return Value {}",x));		
+		
+		long sum = IntStream.range(1, 100).sum();
+		
+		return new AsyncResult<>(sum);
+	}
+}
+
+@EnableAsync
+public class TaskSchedulingApplication implements CommandLineRunner{}
+```
+
+#### 작업 실행자
+
+스프링 프레임워크에서 사용되는 디폴트 작업 실행자는 SimpleAsyncTaskExecutor다.
 
 ## Spring MVC
 
@@ -1150,6 +1232,8 @@ HAL 브라우저를 사용하면 스프링 부트 액추에이터 API를 시각�
   - /application/heapdump : 힙 덤프를 제공한다.
   - /application/httptrace : 애플리케이션에서 처리한 마지막 몇 가지 요청을 추적한다.
   - /application/threaddump : 스레드 덤프를 제공한다.
+
+
 
 ---
 
