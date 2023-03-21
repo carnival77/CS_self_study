@@ -15,9 +15,7 @@
 
 <img src="https://user-images.githubusercontent.com/56222478/143771362-8a066b2d-47e8-429b-b006-9127b3da7d99.png"  width="500" height="250"/>
 
-
 > TCP와 UDP는 TCP/IP의 전송계층에서 사용되는 프로토콜이다. 전송계층은 IP에 의해 전달되는 패킷의 오류를 검사하고 재전송 요구 등의 제어를 담당하는 계층이다.
-> 
 
 ++ [https://www.youtube.com/watch?v=1pfTxp25MA8](https://www.youtube.com/watch?v=1pfTxp25MA8)
 
@@ -97,6 +95,8 @@ UDP는 흐름제어, 오류제어 또는 손상된 세그먼트의 수신에 대
 - 흐름 제어, 혼잡 제어, 오류 제어를 하지 않으므로 손상된 세그먼트에 대한 재전송을 하지 않는다.
 - 이로 인해 속도가 빠르며 네트워크 부하가 적다는 장점이 있지만, 신뢰성 있는 데이터 전송을 보장하지 못한다.
 - UDP는 DNS(누군가 DNS 서비스를 요청할 때마다 TCP처럼 Session을 맺고 통신한다면 속도도 느리고, 서버 리소스도 엄청나게 소모될 것이다.) 등에서 사용된다
+- UDP는 왜 1 대 N 연결이 가능한가?
+  1. [6장 UDP 서버/클라이언트](https://dbehdrhs.tistory.com/82)
 
 ---
 
