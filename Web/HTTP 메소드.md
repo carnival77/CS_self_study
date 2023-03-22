@@ -1,39 +1,19 @@
-<div  align="center">
+# HTTP METHOD
 
-<br />
-
-<h1>HTTP의 GET과 POST 비교</h1>
-
-<br />
-
-</div>
-
-  
-
-## 목차
-
-  
-
-1.  [**REST**](#1)
-
-2.  [**GET 방식**](#2)
-
-3.  [**POST 방식**](#3)
-
-4.  [**PUT 방식**](#4)
-
-5.  [**DELETE 방식**](#5)
-
-6.  [**비교**](#6)
-
-  
-
-<br />
-
-  
-
-<div  id="1"></div>
-
+- [HTTP METHOD](#http-method)
+  - [REST(Representational State Transfer)](#restrepresentational-state-transfer)
+    - [추가 내용](#추가-내용)
+  - [GET 방식](#get-방식)
+    - [GET의 특징](#get의-특징)
+  - [POST 방식](#post-방식)
+    - [POST 특징](#post-특징)
+  - [PUT 방식](#put-방식)
+  - [DELETE 방식](#delete-방식)
+  - [비교](#비교)
+    - [GET vs POST](#get-vs-post)
+    - [🔑POST vs PUT](#post-vs-put)
+    - [PUT vs PATCH](#put-vs-patch)
+- [Reference](#reference)
   
 
 ## REST(Representational State Transfer)
@@ -135,9 +115,27 @@ HTTP Method는 크게 GET, POST, PUT, DELETE가 대표적이며,
 
 - Select의 성향을 가지고 있다. 서버에서 어떤 데이터를 가지고 와서 보여주는 용도이지 서버의 값이나 상태를 바꾸지는 않는다. 따라서 **동일한 요청을 여러 번 수행하더라도 동일한 응답이 와야한다**. (멱등성)
 
-- GET은 HTTP Reqeust Message의 Header 부분의 파라미터에 요청 정보를 담아서 전송하는데, URL의 끝의 ? 뒤에 요청 정보가 (key=value)형태의 쌍을 이루어 이어서 붙는 식이다.
+- GET은 HTTP Reqeust Message의 URL의 끝의 ? 뒤에 요청 정보가 (key=value)형태의 쌍을 이루어 이어서 붙는 식이며, 이것을 쿼리 스트링(QueryString) 이라고 부릅니다.
 
 - URL에 요청 정보가 이어붙어 노출되기에 보안성에 취약하고 길이 제한이 있어 대용량 데이터 전송이 불가하다.
+
+### GET의 특징
+
+1. GET은 불필요한 요청을 제한하기 위해 요청이 캐시될 수 있습니다.
+
+2. 파라미터에 내용이 노출되기 때문에 민감한 데이터를 다룰 때 GET 요청을 사용해서는 안 됩니다. (보안에 취약하다.)
+
+3. GET 요청은 브라우저 기록에 남습니다.
+
+4. GET 요청을 북마크에 추가할 수 있습니다.
+
+5. GET 요청에는 데이터 길이에 대한 제한이 있습니다.
+
+6. Get 요청은 성공시, 200(Ok) HTTP 응답 코드를 XML, JSON뿐만 아니라 여러 데이터(html, txt등..), 여러 형식의 데이터와 함께 반환합니다.
+
+7. GET 요청은 멱등(idempotent)합니다.
+
+> 캐싱(Caching) : 한 번 접근 후, 또 요청할 시 빠르게 접근하기 위해 레지스터에 데이터를 저장시켜 놓는 것입니다.
 
 - ex
 
@@ -157,15 +155,6 @@ GET /user
 
 GET은 캐싱이 가능하여 같은 데이터를 한번 더 조회할 경우에 저장한 값을 사용하여 조회 속도가 빨라진다.
 
-  
-
-<br />
-
-  
-
-<div  id="3"></div>
-
-  
 
 ## POST 방식
 
@@ -180,6 +169,20 @@ GET은 캐싱이 가능하여 같은 데이터를 한번 더 조회할 경우에
 - HTTP 메세지의 Body는 길이의 제한 없이 데이터를 전송할 수 있어서 대용량의 데이터를 전송할 수 있다.
 
 -  **서버에게 동일한 요청을 여러 번 전송해도 응답은 항상 다를 수 있다**. (멱등하지 않다.)
+
+### POST 특징
+
+1. POST 요청은 캐시되지 않습니다.
+
+2. POST 요청은 브라우저 기록에 남아 있지 않습니다.
+
+3. POST 요청을 북마크에 추가할 수 없습니다.
+
+4. POST 요청에는 데이터 길이에 대한 제한이 없습니다.
+
+5. Post 요청 중 자원 생성은 201(Created) HTTP 응답 코드를 반환합니다.
+
+6. Post 요청은 멱등(idempotent)하지 않습니다.
 
 - ex
 
@@ -198,16 +201,6 @@ Content-Type : "application/json"
 URL을 통해서 데이터를 받지 않고, Body 값을 통해서 받는다.
 
 데이터 조회에 성공한다면 Body 값에 저장한 데이터 값을 저장하여 성공 응답(상태 코드 : 201)을 보낸다.
-
-  
-
-<br />
-
-  
-
-<div  id="4"></div>
-
-  
 
 ## PUT 방식
 
@@ -234,15 +227,6 @@ Content-Type : "application/json"
 URL을 통해서 어떠한 데이터를 수정할지 파라메터를 받는다.
 
 그리고 수정할 데이터 값을 Body 값을 통해서 받는다.
-
-  
-
-<br />
-
-  
-
-<div  id="5"></div>
-
   
 
 ## DELETE 방식
@@ -267,13 +251,6 @@ URL을 통해서 어떠한 데이터를 삭제할지 파라메터를 받는다.
 
 데이터 삭제에 성공한다면 Body 값 없이 성공 응답만 보내게 된다.
 
-  
-
-<br />
-
-  
-
-<div  id="6"></div>
 
   
 
@@ -283,7 +260,7 @@ URL을 통해서 어떠한 데이터를 삭제할지 파라메터를 받는다.
 
 ### GET vs POST
 
-  
+![image](https://user-images.githubusercontent.com/52997401/226628197-be922bd2-5872-479f-b640-b4aff50a1fd1.png)
 
 GET은 SELECT 적인 성향을 갖고 있다. 반면에 POST 는 서버의 값이나 상태를 변경하기 위해서 또는 추가하기 위해서 사용된다.
 
@@ -505,3 +482,7 @@ HTTP/1.1 200 OK
 }
 
 ```
+
+# Reference
+
+> - [HTTP 메서드인 GET과 POST와 궁금한점](https://velog.io/@tyjk8997/GET%EA%B3%BC-POST%EC%99%80-%EA%B6%81%EA%B8%88%ED%95%9C%EC%A0%90)

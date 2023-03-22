@@ -2,6 +2,26 @@
 
 CS 전공 지식 스터디 총합 저장소
 
+- [CS\_self\_study](#cs_self_study)
+  - [정리 내용](#정리-내용)
+    - [OS](#os)
+    - [DB](#db)
+    - [Network](#network)
+    - [Data Structure/Algorithm](#data-structurealgorithm)
+    - [Web](#web)
+      - [Servlet](#servlet)
+      - [Spring](#spring)
+    - [Java](#java)
+  - [질문 리스트](#질문-리스트)
+    - [네트워크](#네트워크)
+    - [운영체제](#운영체제)
+    - [데이터베이스](#데이터베이스)
+    - [자료구조/알고리즘](#자료구조알고리즘)
+    - [Java](#java-1)
+      - [Spring](#spring-1)
+      - [JPA](#jpa)
+
+
 ## 정리 내용
 
 ### OS
@@ -24,11 +44,29 @@ CS 전공 지식 스터디 총합 저장소
 
 ### DB
 
+[데이터베이스 기본 개념](https://github.com/carnival77/self_study/blob/main/DB/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4%20%EA%B8%B0%EB%B3%B8%20%EA%B0%9C%EB%85%90.md)
+
+[관계형 데이터베이스](https://github.com/carnival77/self_study/blob/main/DB/%EA%B4%80%EA%B3%84%ED%98%95%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4.md)
+
+[Key](https://github.com/carnival77/self_study/blob/main/DB/Key.md)
+
+[index](https://github.com/carnival77/self_study/blob/main/DB/index.md)
+
+[partition](https://github.com/carnival77/self_study/blob/main/DB/partition.md)
+
+[SQL vs NoSQL](https://github.com/carnival77/self_study/blob/main/DB/SQL%20vs%20NoSQL.md)
+
 [트랜잭션](https://github.com/carnival77/CS_self_study/blob/main/DB/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98.md)
 
-### Network
+[트랜잭션 격리 수준](https://github.com/carnival77/self_study/blob/main/DB/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%20%EA%B2%A9%EB%A6%AC%EC%88%98%EC%A4%80.md)
 
-[웹 통신의 큰 흐름](https://github.com/carnival77/CS_self_study/blob/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/%EC%9B%B9%20%ED%86%B5%EC%8B%A0%EC%9D%98%20%ED%81%B0%20%ED%9D%90%EB%A6%84.md)
+[정규화](https://github.com/carnival77/self_study/blob/main/DB/%EC%A0%95%EA%B7%9C%ED%99%94.md)
+
+[식별과 비식별](https://github.com/carnival77/self_study/blob/main/DB/%EC%8B%9D%EB%B3%84%EA%B3%BC%20%EB%B9%84%EC%8B%9D%EB%B3%84.md)
+
+[스프링 트랜잭션과 트랜잭션 전파](https://github.com/carnival77/self_study/blob/main/DB/%EC%8A%A4%ED%94%84%EB%A7%81%20%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%EA%B3%BC%20%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%20%EC%A0%84%ED%8C%8C.md)
+
+### Network
 
 [OSI 7계층과 TCP/IP 4계층](https://github.com/carnival77/CS_self_study/blob/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/OSI%207%EA%B3%84%EC%B8%B5%EA%B3%BC%20TCP%20IP%204%EA%B3%84%EC%B8%B5.md)
 
@@ -36,26 +74,47 @@ CS 전공 지식 스터디 총합 저장소
 
 [TCP와 UDP의 비교](https://github.com/carnival77/CS_self_study/blob/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/TCP%EC%99%80%20UDP%EC%9D%98%20%EB%B9%84%EA%B5%90.md)
 
-[HTTP와 HTTPS](https://github.com/carnival77/CS_self_study/blob/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/HTTP%EC%99%80%20HTTPS.md)
-
 [SSL](https://github.com/carnival77/CS_self_study/blob/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/SSL.md)
 
-[HTTP 메소드](https://github.com/carnival77/CS_self_study/blob/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/HTTP%20%EB%A9%94%EC%86%8C%EB%93%9C.md)
-
 [DNS](https://github.com/carnival77/CS_self_study/blob/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/DNS.md)
+
+[Part1.컴퓨터 네트워크 소개](https://github.com/carnival77/self_study/blob/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/%ED%8C%A8%EC%8A%A4%ED%8A%B8%EC%BA%A0%ED%8D%BC%EC%8A%A4%20%EA%B0%95%EC%9D%98/Part1.%EC%BB%B4%ED%93%A8%ED%84%B0%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EC%86%8C%EA%B0%9C.md)
+
+### Data Structure/Algorithm
+
+### Web
+
+[웹 통신의 큰 흐름](https://github.com/carnival77/CS_self_study/blob/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/%EC%9B%B9%20%ED%86%B5%EC%8B%A0%EC%9D%98%20%ED%81%B0%20%ED%9D%90%EB%A6%84.md)
+
+[HTTP와 HTTPS](https://github.com/carnival77/CS_self_study/blob/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/HTTP%EC%99%80%20HTTPS.md)
 
 [REST,REST API, RESTful](https://github.com/carnival77/CS_self_study/blob/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/REST%2CREST%20API%2C%20RESTful.md)
 
 [쿠키와 세션](https://github.com/carnival77/CS_self_study/blob/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/%EC%BF%A0%ED%82%A4%EC%99%80%20%EC%84%B8%EC%85%98.md)
 
-### Data Structure/Algorithm
+[HTTP 메소드](https://github.com/carnival77/CS_self_study/blob/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/HTTP%20%EB%A9%94%EC%86%8C%EB%93%9C.md)
 
+#### Servlet
+
+[자바와 서블릿과 웹](https://github.com/carnival77/self_study/blob/main/Web/Servlet/%EC%9E%90%EB%B0%94%EC%99%80%20%EC%84%9C%EB%B8%94%EB%A6%BF%EA%B3%BC%20%EC%9B%B9.md)
+#### Spring
+
+[Spring 주요 개념](https://github.com/carnival77/self_study/blob/main/Web/Spring/Spring%20%EC%A3%BC%EC%9A%94%20%EA%B0%9C%EB%85%90.md)
+
+[Autowiring](https://github.com/carnival77/self_study/blob/main/Web/Spring/Autowiring.md)
+
+[빈 생명주기](https://github.com/carnival77/self_study/blob/main/Web/Spring/%EB%B9%88%20%EC%83%9D%EB%AA%85%EC%A3%BC%EA%B8%B0.md)
+
+[AOP](https://github.com/carnival77/self_study/blob/main/Web/Spring/AOP.md)
+
+[필터, 인터셉터, AOP 비교](https://github.com/carnival77/self_study/blob/main/Web/Spring/%ED%95%84%ED%84%B0%2C%20%EC%9D%B8%ED%84%B0%EC%85%89%ED%84%B0%2C%20AOP%20%EB%B9%84%EA%B5%90.md)
+
+[Spring_CORS](https://github.com/carnival77/self_study/blob/main/Web/Spring/Spring_CORS.md)
 ### Java
 
 [자바의 정석 - 챕터 6](https://github.com/carnival77/CS_self_study/blob/main/Java/%EC%9E%90%EB%B0%94%EC%9D%98%20%EC%A0%95%EC%84%9D/chapter6.md)
 [자바의 정석 - 챕터 6 연습 문제](https://github.com/carnival77/CS_self_study/blob/main/Java/%EC%9E%90%EB%B0%94%EC%9D%98%20%EC%A0%95%EC%84%9D/Chapter6_exercise.md)
 
-### Spring
 
 ## 질문 리스트
 
@@ -855,14 +914,18 @@ CS 전공 지식 스터디 총합 저장소
   </br>
   <p>DI는 세가지 방법이 있습니다. 생성자 삽입, Setter를 이용한 메소드 매개 변수 삽입, 필드 주입이 있습니다.</p>
   <p>생성자 주입은 생성자 호출시점에 딱 1번만 호출되는 것을 보장하며 불변, 필수 의존관계에 사용합니다.</p>
-  <p>Setter주입은 선택, 변경 가능성이 있는 의존관계에 사용되며 스프링빈을 선택적으로 등록이 가능합니다.</p>
+  <p>Setter주입은 선택, 변경 가능성이 있는 의존관계에 사용되며 스프링 빈을 선택적으로 등록이 가능합니다.</p>
   <p>필드 주입은 `@Autowired` 를 사용하는데 외부에서 변경이 불가능하여 테스트 하기 힘듭니다. DI 프레임워크 없이는 작동하기 힘들며, 주로 애플리케이션과 관계없는 테스트코드나 `@Configuration` 같은 스프링 설정 목적으로 사용합니다. </p>
 </details>
 
 <details>
   <summary>Autowiring 과정에 대해서 설명해주세요.</summary>
   </br>
-  <p>컨테이너에서 타입(인터페이스 또는 오브젝트)을 이용해 의존 대상 객체를 검색하고 할당할 수 있는 빈 객체를 찾아 주입한다</p>
+     <p>스프링 컨테이너에 빈들을 모두 등록한 후에, 의존성 주입 단계가 이루어진다. 이 때 @Autowired 어노테이션이 부여된 해당 변수 및 메서드에 스프링이 관리하는 Bean을 자동으로 매핑해주는 개념이다. 즉, 메서드가 실행되며 필요한 인스턴스를 주입하거나 해당 변수에 자동으로 빈을 매핑한다.</p>
+      <p> @Autowired 어노테이션을 통해 이루어지며, 이것은 스프링 컨테이너에 등록한 빈에게 의존 관계 주입이 필요할 때, DI(의존성 주입)을 도와주는 어노테이션이다.</p>
+   <p>변수, setter 메서드, 생성자, 일반 메서드에 적용 가능</p>
+   <p>의존 객체 주입 시 주로 Type 이용</p>
+     <p>@Autowired 가 Type으로 찾아서 주입하므로 동일한 Bean 타입의 객체가 여러 개 있을 경우, Bean을 찾기 위해 @Qualifier 어노테이션을 같이 사용해야 합니다. </p>
 </details>
 
 <details>
