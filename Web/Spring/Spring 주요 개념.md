@@ -756,15 +756,37 @@ public class TaskSchedulingApplication implements CommandLineRunner{}
 
 ![image](https://user-images.githubusercontent.com/52997401/223123839-7c5a9e7d-78bd-4e3a-ab97-a8ebebb24a61.png)
 
-1. 디스패처 서블릿이 클라이언트로부터 요청을 받는다.
-2. 요청 URL를 기준으로 이를 처리할 핸들러 이름을 알기 위해 핸들러 맵핑과 통신한다.
-3. 핸들러 맵핑은 요청 URL을 보고 핸들러 이름을 디스패처 서블릿에게 알려줍니다. 이때 핸들러를 실행하기 전/후에 처리할 것을 인터셉터로 만듭니다.
-4. 디스패처 서블릿은 해당 핸들러 메소드에게 제어권을 넘겨주고, 이 핸들러는 응답에 필요한 모델과 뷰(ModelAndView)를 디스패처 서블릿에게 반환합니다.
-5. 디스패처 서블릿은 받은 논리적 뷰 이름을 뷰 리졸버에게 전달해 응답에 필요한 물리적 뷰 이름을 만들라고 명령합니다.
-6. 뷰 리졸버는 논리적 뷰 이름을 물리적 뷰 이름에 매핑한 후 반환한다.
-7. 디스패처 서블릿은 해당 뷰를 실행하며, 해당 뷰에서 모델을 사용할 수 있게 한다.
-8. 뷰는 원하는 응답을 생성해서 반환합니다.
-9. 디스패처 서블릿은 응답을 클라이언트에게 전달합니다.
+1. 클라이언트(Client)가 서버에 어떤 요청(Request)을 한다면 스프링에서 제공하는 DispatcherServlet 이라는 클래스(일종의 front controller)가 요청을 가로챈다.
+
+(web.xml에 살펴보면 모든 url ( / )에 서블릿 매핑을하여 모든 요청을 DispatcherServlet이 가로채게 해둠(변경 가능))
+
+2. 요청을 가로챈 DispatcherServlet은 HandlerMapping(URL 분석등..)에게 어떤 컨트롤러에게 요청을 위임하면 좋을지 물어본다.
+
+(HandlerMapping은 servlet-context.xml에서 @Controller로 등록한 것들을 스캔해서 찾아놨기 때문에 어느 컨트롤러에게 요청을 위임해야할지 알고 있다.)
+
+3. 요청에 매핑된 컨트롤러가 있다면 @RequestMapping을 통하여 요청을 처리할 메서드에 도달한다.
+
+4. 컨트롤러에서는 해당 요청을 처리할 Service를 주입(DI)받아 비즈니스로직을 Service에게 위임한다.
+
+5. Service에서는 요청에 필요한 작업 대부분(코딩)을 담당하며 데이터베이스에 접근이 필요하면 DAO를 주입받아 DB처리는 DAO에게 위임한다.
+
+6. DAO는 mybatis(또는 hibernate등) 설정을 이용해서 SQL 쿼리를 날려 DB에 저장되어있는 정보를 받아 서비스에게 다시 돌려준다.
+
+(이 때, 보통 Request와 함께 날아온 DTO 객체(@RequestParam, @RequestBody, ...)로 부터 DB 조회에 필요한 데이터를 받아와 쿼리를 만들어 보내고, 결과로 받은 Entity 객체를 가지고 Response에 필요한 DTO객체로 변환한다.)
+
+7. 모든 비즈니스 로직을 끝낸 서비스가 결과물을 컨트롤러에게 넘긴다.
+
+8. 결과물을 받은 컨트롤러는 필요에 따라 Model객체에 결과물 넣거나, 어떤 view(jsp)파일을 보여줄 것인지등의 정보를 담아 DispatcherServlet에게 보낸다.
+
+9. DispatcherServlet은 ViewResolver에게 받은 뷰의 대한 정보를 넘긴다.
+
+10. ViewResolver는 해당 JSP를 찾아서(응답할 View를 찾음) DispatcherServlet에게 알려준다.
+
+(servlet-context.xml에서 suffix, prefix를 통해 /WEB-INF/views/index.jsp 이렇게 만들어주는 것도 ViewResolver)
+
+11. DispatcherServlet은 응답할 View에게 Render를 지시하고 View는 응답 로직을 처리한다.
+
+12. 결과적으로 DispatcherServlet이 클라이언트에게 렌더링된 View를 응답한다.
 
 #### 컨트롤러를 위한 핵심 어노테이션
 
@@ -1273,3 +1295,4 @@ HAL 브라우저를 사용하면 스프링 부트 액추에이터 API를 시각�
 
 > - [tech-interview](https://github.com/carnival77/tech-interview/blob/master/contents/spring.md#filter%EC%99%80-interceptor-%EC%B0%A8%EC%9D%B4)
 > - [스프링 5 마스터 2/e](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=250634950)
+> - [Spring MVC 구조의 처리 과정을 설명해보시오. (MVC process)](https://jeong-pro.tistory.com/96)
