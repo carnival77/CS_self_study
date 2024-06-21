@@ -64,8 +64,8 @@ public class OrderServiceImpl implements OrderService {
 ```java
 @Component
 public class OrderServiceImpl implements OrderService {
-	private MemberRepository memberRepository;
-	private DiscountPolicy discountPolicy;
+	private final MemberRepository memberRepository;
+	private final DiscountPolicy discountPolicy;
 	@Autowired
 	public void setMemberRepository(MemberRepository memberRepository) {
 	    this.memberRepository = memberRepository;
@@ -108,7 +108,7 @@ public class OrderServiceImpl implements OrderService {
 - final 키워드의 사용
   - 생성자 주입 사용 시 final 키워드 사용 가능 → 생성자를 통해서만 설정 가능
   - 최고의 장점 → 컴파일 오류를 통해 “누락”을 놓치지 않을 수 있다.
- 
+
 
 ### 생성자 주입 정리
 - 생성자 주입 → 순수한 자바 언어의 특징을 잘 살리는 방법이다
