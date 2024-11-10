@@ -10,10 +10,7 @@ CS 전공 지식 스터디 총합 저장소
     - [Data Structure](#data-structure)
     - [Algorithm](#algorithm)
     - [Web](#web)
-      - [Servlet](#servlet)
-      - [Spring](#spring)
     - [Java](#java)
-      - [자바의 정석](#자바의-정석)
   - [질문 리스트](#질문-리스트)
     - [네트워크](#네트워크)
     - [운영체제](#운영체제)
@@ -21,7 +18,7 @@ CS 전공 지식 스터디 총합 저장소
     - [자료구조/알고리즘](#자료구조알고리즘)
     - [미디언 오브 쓰리 (Median of Three)](#미디언-오브-쓰리-median-of-three)
     - [Java](#java-1)
-      - [Spring](#spring-1)
+      - [Spring](#spring)
       - [JPA](#jpa)
   - [기타](#기타)
     - [트러블 슈팅](#트러블-슈팅)
@@ -36,166 +33,19 @@ CS 전공 지식 스터디 총합 저장소
 
 ### OS
 
-[프로그램과 프로세스, 스레드](https://github.com/carnival77/CS_self_study/blob/main/OS/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8%EA%B3%BC%20%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4%2C%20%EC%8A%A4%EB%A0%88%EB%93%9C.md)
-
-[멀티 프로세스와 멀티 스레드](https://github.com/carnival77/CS_self_study/blob/main/OS/%EB%A9%80%ED%8B%B0%20%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4%EC%99%80%20%EB%A9%80%ED%8B%B0%20%EC%8A%A4%EB%A0%88%EB%93%9C.md)
-
-[메모리 관리 전략](https://github.com/carnival77/CS_self_study/blob/main/OS/%EB%A9%94%EB%AA%A8%EB%A6%AC%20%EA%B4%80%EB%A6%AC%20%EC%A0%84%EB%9E%B5.md)
-
-[캐시](https://github.com/carnival77/CS_self_study/blob/main/OS/%EC%BA%90%EC%8B%9C.md)
-
-[CPU 스케쥴러](https://github.com/carnival77/CS_self_study/blob/main/OS/CPU%EC%8A%A4%EC%BC%80%EC%A4%84%EB%9F%AC.md)
-
-[스케줄러](https://github.com/carnival77/CS_self_study/blob/main/OS/%EC%8A%A4%EC%BC%80%EC%A4%84%EB%9F%AC.md)
-
-[가상 메모리](https://github.com/carnival77/CS_self_study/blob/main/OS/%EA%B0%80%EC%83%81%EB%A9%94%EB%AA%A8%EB%A6%AC.md)
-
-[동기와 비동기](https://github.com/carnival77/CS_self_study/blob/main/OS/%EB%8F%99%EA%B8%B0%EC%99%80%20%EB%B9%84%EB%8F%99%EA%B8%B0.md)
-
 ### DB
-
-[데이터베이스 기본 개념](https://github.com/carnival77/self_study/blob/main/DB/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4%20%EA%B8%B0%EB%B3%B8%20%EA%B0%9C%EB%85%90.md)
-
-[관계형 데이터베이스](https://github.com/carnival77/self_study/blob/main/DB/%EA%B4%80%EA%B3%84%ED%98%95%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4.md)
-
-[Key](https://github.com/carnival77/self_study/blob/main/DB/Key.md)
-
-[index](https://github.com/carnival77/self_study/blob/main/DB/index.md)
-
-[partition](https://github.com/carnival77/self_study/blob/main/DB/partition.md)
-
-[SQL vs NoSQL](https://github.com/carnival77/self_study/blob/main/DB/SQL%20vs%20NoSQL.md)
-
-[트랜잭션](https://github.com/carnival77/CS_self_study/blob/main/DB/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98.md)
-
-[트랜잭션 격리 수준](https://github.com/carnival77/self_study/blob/main/DB/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%20%EA%B2%A9%EB%A6%AC%EC%88%98%EC%A4%80.md)
-
-[정규화](https://github.com/carnival77/self_study/blob/main/DB/%EC%A0%95%EA%B7%9C%ED%99%94.md)
-
-[식별과 비식별](https://github.com/carnival77/self_study/blob/main/DB/%EC%8B%9D%EB%B3%84%EA%B3%BC%20%EB%B9%84%EC%8B%9D%EB%B3%84.md)
-
-[스프링 트랜잭션과 트랜잭션 전파](https://github.com/carnival77/self_study/blob/main/DB/%EC%8A%A4%ED%94%84%EB%A7%81%20%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%EA%B3%BC%20%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%20%EC%A0%84%ED%8C%8C.md)
 
 ### Network
 
-[OSI 7계층과 TCP/IP 4계층](https://github.com/carnival77/CS_self_study/blob/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/OSI%207%EA%B3%84%EC%B8%B5%EA%B3%BC%20TCP%20IP%204%EA%B3%84%EC%B8%B5.md)
-
-[TCP 3-way Handshake](https://github.com/carnival77/CS_self_study/blob/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/TCP%203-way%20Handshake.md)
-
-[TCP와 UDP의 비교](https://github.com/carnival77/CS_self_study/blob/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/TCP%EC%99%80%20UDP%EC%9D%98%20%EB%B9%84%EA%B5%90.md)
-
-[SSL](https://github.com/carnival77/CS_self_study/blob/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/SSL.md)
-
-[DNS](https://github.com/carnival77/CS_self_study/blob/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/DNS.md)
-
-[Part1.컴퓨터 네트워크 소개](https://github.com/carnival77/self_study/blob/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/%ED%8C%A8%EC%8A%A4%ED%8A%B8%EC%BA%A0%ED%8D%BC%EC%8A%A4%20%EA%B0%95%EC%9D%98/Part1.%EC%BB%B4%ED%93%A8%ED%84%B0%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EC%86%8C%EA%B0%9C.md)
-
 ### Data Structure
 
-[Array vs ArrayList vs Linked List](https://github.com/carnival77/self_study/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%2C%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/Array%20vs%20ArrayList%20vs%20Linked%20List.md)
-
-[B+Tree](https://github.com/carnival77/self_study/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%2C%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/B%2BTree.md)
-
-[Btree](https://github.com/carnival77/self_study/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%2C%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/Btree.md)
-
-[Hash](https://github.com/carnival77/self_study/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%2C%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/Hash.md)
-
-[Tree](https://github.com/carnival77/self_study/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%2C%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/Tree.md)
-
-[heap](https://github.com/carnival77/self_study/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%2C%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/heap.md)
-
-[그래프](https://github.com/carnival77/self_study/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%2C%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EA%B7%B8%EB%9E%98%ED%94%84.md)
-
-[서로소 집합](https://github.com/carnival77/self_study/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%2C%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%84%9C%EB%A1%9C%EC%86%8C%20%EC%A7%91%ED%95%A9.md)
-
-[스택과 큐](https://github.com/carnival77/self_study/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%2C%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%8A%A4%ED%83%9D%EA%B3%BC%20%ED%81%90.md)
-
-[트라이(Trie)](https://github.com/carnival77/self_study/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%2C%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%ED%8A%B8%EB%9D%BC%EC%9D%B4(Trie).md)
-
 ### Algorithm
-
-[BFS & DFS](https://github.com/carnival77/self_study/blob/main/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/BFS%20%26%20DFS.md)
-
-[GCD&LCM](https://github.com/carnival77/self_study/blob/main/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/GCD%26LCM.md)
-
-[거품 정렬(Bubble Sort)](https://github.com/carnival77/self_study/blob/main/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EA%B1%B0%ED%92%88%20%EC%A0%95%EB%A0%AC(Bubble%20Sort).md)
-
-[병합 정렬(Merge Sort)](https://github.com/carnival77/self_study/blob/main/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EB%B3%91%ED%95%A9%20%EC%A0%95%EB%A0%AC(Merge%20Sort).md)
-
-[삽입 정렬(Insertion Sort)](https://github.com/carnival77/self_study/blob/main/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%82%BD%EC%9E%85%20%EC%A0%95%EB%A0%AC(Insertion%20Sort).md)
-
-[선택 정렬(Selection Sort)](https://github.com/carnival77/self_study/blob/main/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%84%A0%ED%83%9D%20%EC%A0%95%EB%A0%AC(Selection%20Sort).md)
-
-[이분 탐색(Binary Search)](https://github.com/carnival77/self_study/blob/main/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%9D%B4%EB%B6%84%20%ED%83%90%EC%83%89(Binary%20Search).md)
-
-[퀵 정렬(Quick Sort)](https://github.com/carnival77/self_study/blob/main/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%ED%80%B5%20%EC%A0%95%EB%A0%AC(Quick%20Sort).md)
-
-[힙 정렬(Heap Sort)](https://github.com/carnival77/self_study/blob/main/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%ED%9E%99%20%EC%A0%95%EB%A0%AC(Heap%20Sort).md)
-
-[플로이드 워셜 알고리즘](https://github.com/carnival77/self_study/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%2C%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%ED%94%8C%EB%A1%9C%EC%9D%B4%EB%93%9C%20%EC%9B%8C%EC%85%9C%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.md)
-
-[크루스칼 알고리즘](https://github.com/carnival77/self_study/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%2C%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%ED%81%AC%EB%A3%A8%EC%8A%A4%EC%B9%BC%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.md)
-
-[다익스트라 알고리즘](https://github.com/carnival77/self_study/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%2C%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EB%8B%A4%EC%9D%B5%EC%8A%A4%ED%8A%B8%EB%9D%BC%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.md)
 
 
 
 ### Web
 
-[웹 통신의 큰 흐름](https://github.com/carnival77/CS_self_study/blob/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/%EC%9B%B9%20%ED%86%B5%EC%8B%A0%EC%9D%98%20%ED%81%B0%20%ED%9D%90%EB%A6%84.md)
-
-[HTTP와 HTTPS](https://github.com/carnival77/CS_self_study/blob/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/HTTP%EC%99%80%20HTTPS.md)
-
-[REST,REST API, RESTful](https://github.com/carnival77/CS_self_study/blob/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/REST%2CREST%20API%2C%20RESTful.md)
-
-[쿠키와 세션](https://github.com/carnival77/CS_self_study/blob/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/%EC%BF%A0%ED%82%A4%EC%99%80%20%EC%84%B8%EC%85%98.md)
-
-[HTTP 메소드](https://github.com/carnival77/CS_self_study/blob/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/HTTP%20%EB%A9%94%EC%86%8C%EB%93%9C.md)
-
-#### Servlet
-
-[자바와 서블릿과 웹](https://github.com/carnival77/self_study/blob/main/Web/Servlet/%EC%9E%90%EB%B0%94%EC%99%80%20%EC%84%9C%EB%B8%94%EB%A6%BF%EA%B3%BC%20%EC%9B%B9.md)
-#### Spring
-
-[Spring 주요 개념](https://github.com/carnival77/self_study/blob/main/Web/Spring/Spring%20%EC%A3%BC%EC%9A%94%20%EA%B0%9C%EB%85%90.md)
-
-[Autowiring](https://github.com/carnival77/self_study/blob/main/Web/Spring/Autowiring.md)
-
-[빈 생명주기](https://github.com/carnival77/self_study/blob/main/Web/Spring/%EB%B9%88%20%EC%83%9D%EB%AA%85%EC%A3%BC%EA%B8%B0.md)
-
-[AOP](https://github.com/carnival77/self_study/blob/main/Web/Spring/AOP.md)
-
-[필터, 인터셉터, AOP 비교](https://github.com/carnival77/self_study/blob/main/Web/Spring/%ED%95%84%ED%84%B0%2C%20%EC%9D%B8%ED%84%B0%EC%85%89%ED%84%B0%2C%20AOP%20%EB%B9%84%EA%B5%90.md)
-
-[Spring_CORS](https://github.com/carnival77/self_study/blob/main/Web/Spring/Spring_CORS.md)
 ### Java
-
-[JVM 구조와 Java 실행과정](https://github.com/carnival77/self_study/blob/main/Java/JVM%20%EA%B5%AC%EC%A1%B0%EC%99%80%20Java%20%EC%8B%A4%ED%96%89%EA%B3%BC%EC%A0%95.md)
-
-[어노테이션](https://github.com/carnival77/self_study/blob/main/Java/%EC%96%B4%EB%85%B8%ED%85%8C%EC%9D%B4%EC%85%98.md)
-
-[오버라이딩과 오버로딩 차이](https://github.com/carnival77/self_study/blob/main/Java/%EC%98%A4%EB%B2%84%EB%9D%BC%EC%9D%B4%EB%94%A9%EA%B3%BC%20%EC%98%A4%EB%B2%84%EB%A1%9C%EB%94%A9%20%EC%B0%A8%EC%9D%B4.md)
-
-[접근 제어자](https://github.com/carnival77/self_study/blob/main/Java/%EC%A0%91%EA%B7%BC%20%EC%A0%9C%EC%96%B4%EC%9E%90.md)
-
-[추상클래스_인터페이스](https://github.com/carnival77/self_study/blob/main/Java/%EC%B6%94%EC%83%81%ED%81%B4%EB%9E%98%EC%8A%A4_%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4.md)
-
-[강한결합과 느슨한결합](https://github.com/carnival77/self_study/blob/main/Java/%EA%B0%95%ED%95%9C%EA%B2%B0%ED%95%A9%EA%B3%BC%20%EB%8A%90%EC%8A%A8%ED%95%9C%EA%B2%B0%ED%95%A9.md)
-
-[제네릭](https://github.com/carnival77/self_study/blob/main/Java/%EC%A0%9C%EB%84%A4%EB%A6%AD.md)
-
-[Java8에 추가된 기능](https://github.com/carnival77/self_study/blob/main/Java/Java8%EC%97%90%20%EC%B6%94%EA%B0%80%EB%90%9C%20%EA%B8%B0%EB%8A%A5.md)
-
-[mutableAndImmutable](https://github.com/carnival77/self_study/blob/main/Java/mutableAndImmutable.md)
-
-#### 자바의 정석
-
-[자바의 정석 - 챕터 6](https://github.com/carnival77/CS_self_study/blob/main/Java/%EC%9E%90%EB%B0%94%EC%9D%98%20%EC%A0%95%EC%84%9D/chapter6.md)
-[자바의 정석 - 챕터 6 연습 문제](https://github.com/carnival77/CS_self_study/blob/main/Java/%EC%9E%90%EB%B0%94%EC%9D%98%20%EC%A0%95%EC%84%9D/Chapter6_exercise.md)
-
-[Chapter12_제너릭_열거형_애너테이션](https://github.com/carnival77/self_study/blob/main/Java/%EC%9E%90%EB%B0%94%EC%9D%98%20%EC%A0%95%EC%84%9D/Chapter12_%EC%A0%9C%EB%84%88%EB%A6%AD_%EC%97%B4%EA%B1%B0%ED%98%95_%EC%95%A0%EB%84%88%ED%85%8C%EC%9D%B4%EC%85%98.md)
-
-[Chapter11_컬렉션프레임워크](https://github.com/carnival77/self_study/blob/main/Java/%EC%9E%90%EB%B0%94%EC%9D%98%20%EC%A0%95%EC%84%9D/Chapter11_%EC%BB%AC%EB%A0%89%EC%85%98%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC.md)
 
 ## 질문 리스트
 
@@ -649,32 +499,31 @@ CS 전공 지식 스터디 총합 저장소
 보통의 자료구조/알고리즘적 지식은 코딩테스트로 검증합니다.  
 하지만 아래의 개념을 적어도 이해는 한다고 생각하니, 혹시 모르는 부분이 있을 경우 학습을 권장합니다.
 
+
 <details>
   <summary>퀵 소트란?</summary>
-  </br>
-  <p>
-  
+    </br>
+    <p>
   - 퀵 정렬은 분할 정복 방법을 통해 주어진 배열을 정렬한다.
-  
-    - 분할 정복(Divide and Conquer) : 문제를 작은 2개의 문제로 분리하고 각각을 해결한 다음, 결과를 모아서 원래의 문제를 해결하는 전략이다.
-    
+  - 분할 정복(Divide and Conquer) : 문제를 작은 2개의 문제로 분리하고 각각을 해결한 다음, 결과를 모아서 원래의 문제를 해결하는 전략이다.
   - 불안정 정렬에 속하며, 다른 원소와의 비교만으로 정렬을 수행하는 비교 정렬에 속한다.
+
   - 또한, Merge Sort와 달리 Quick Sort는 배열을 비균등하게 분할한다.
 
-- 시간복잡도 : 
-  - **평균 시간복잡도**: O(n log n)
-  - **최악 시간복잡도**: O(n^2)
-  - **최선 시간복잡도**: O(n log n)
+  - 시간복잡도 : 
+    - **평균 시간복잡도**: O(n log n)
+    - **최악 시간복잡도**: O(n^2)
+    - **최선 시간복잡도**: O(n log n)
 
-- 로직
+  - 로직
 
-1. **피벗(Pivot) 선택**: 배열에서 하나의 요소를 피벗으로 선택합니다.
-2. **분할(Divide)**: 피벗을 기준으로 배열을 두 부분으로 나눕니다. 피벗보다 작은 요소들은 왼쪽, 큰 요소들은 오른쪽에 위치합니다.
-3. **정복(Conquer)**: 나뉜 두 부분 배열에 대해 퀵소트를 재귀적으로 적용합니다.
-4. **합병(Merge)**: 분할된 부분 배열들이 모두 정렬되면, 이들을 합쳐 전체 배열을 정렬합니다.
+    1. **피벗(Pivot) 선택**: 배열에서 하나의 요소를 피벗으로 선택합니다.
+    2. **분할(Divide)**: 피벗을 기준으로 배열을 두 부분으로 나눕니다. 피벗보다 작은 요소들은 왼쪽, 큰 요소들은 오른쪽에 위치합니다.
+    3. **정복(Conquer)**: 나뉜 두 부분 배열에 대해 퀵소트를 재귀적으로 적용합니다.
+    4. **합병(Merge)**: 분할된 부분 배열들이 모두 정렬되면, 이들을 합쳐 전체 배열을 정렬합니다.
 
-```python
-def qsort(a,left,right):
+  ```python
+  def qsort(a,left,right):
     pl=left # 왼쪽 커서
     pr=right # 오른쪽 커서
     x=a[(left+right)//2] # 피벗(가운데 원소)
@@ -690,88 +539,84 @@ def qsort(a,left,right):
     
     if left<pr:qsort(a,left,pr) # pr가 a[0]보다 오른쪽에 위치하면(left<pr) 왼쪽 그룹을 분할
     if pl<right:qsort(a,pl,right) # pl이 a[n-1]보다 왼쪽에 위치하면(pl<right) 오른쪽 그룹을 분할
-```
+  ```
 
-- 시간 복잡도
+  - 시간 복잡도
 
-**평균의 경우 : T(N) = O(N logN)**
+  **평균의 경우 : T(N) = O(N logN)**
 
-- 순환 호출의 깊이(logn) x 각 순환 호출 단계의 비교 연산(n) = n logn
+  - 순환 호출의 깊이(logn) x 각 순환 호출 단계의 비교 연산(n) = n logn
 
-퀵소트는 대부분의 경우 피벗이 배열을 균등하게 두 부분으로 나누게 되며, 이때 평균 시간복잡도는 O(n log n)입니다. 여기서 'n'은 배열의 크기입니다.
+  퀵소트는 대부분의 경우 피벗이 배열을 균등하게 두 부분으로 나누게 되며, 이때 평균 시간복잡도는 O(n log n)입니다. 여기서 'n'은 배열의 크기입니다.
 
-퀵소트의 단계가 배열을 반으로 나누는 형태로 이루어지기 때문에, 대략 log n 단계만큼 분할이 필요합니다. 각 단계마다 전체 배열을 한 번씩 훑어야 하기 때문에 n번의 비교가 필요합니다. 따라서 평균적으로 O(n log n)의 시간복잡도를 가집니다.
+  퀵소트의 단계가 배열을 반으로 나누는 형태로 이루어지기 때문에, 대략 log n 단계만큼 분할이 필요합니다. 각 단계마다 전체 배열을 한 번씩 훑어야 하기 때문에 n번의 비교가 필요합니다. 따라서 평균적으로 O(n log n)의 시간복잡도를 가집니다.
 
-- 비교 횟수 : logN
+  - 비교 횟수 : logN
 
-레코드의 개수 N이 2의 거듭제곱이라고 가정했을 때(N = 2^k), N = 2^3의 경우
+  레코드의 개수 N이 2의 거듭제곱이라고 가정했을 때(N = 2^k), N = 2^3의 경우
 
-2^3 -> 2^2 -> 2^1 -> 2^0 순으로 줄어들어 순환 호출의 깊이가 3임을 알 수 있다.
+  2^3 -> 2^2 -> 2^1 -> 2^0 순으로 줄어들어 순환 호출의 깊이가 3임을 알 수 있다.
 
-![img](https://github.com/GimunLee/tech-refrigerator/raw/master/Algorithm/resources/quick-sort-002.png)
+  ![img](https://github.com/GimunLee/tech-refrigerator/raw/master/Algorithm/resources/quick-sort-002.png)
 
-이것을 일반화하면 **N = 2^k의 경우, k = logN**임을 알 수 있다.
+  이것을 일반화하면 **N = 2^k의 경우, k = logN**임을 알 수 있다.
 
-- 각 순환 호출 단계의 비교 연산 : N
+  - 각 순환 호출 단계의 비교 연산 : N
 
-각 순환 호출에서는 전체 리스트의 대부분의 레코드를 비교해야 하므로 평균 N번 정도의 비교가 이루어진다.
+  각 순환 호출에서는 전체 리스트의 대부분의 레코드를 비교해야 하므로 평균 N번 정도의 비교가 이루어진다.
 
-**최선 시간복잡도: O(n log n)**
+  **최선 시간복잡도: O(n log n)**
 
-최선의 경우는 피벗이 항상 배열을 균등하게 두 부분으로 나누는 경우입니다. 이때도 시간복잡도는 O(n log n)입니다.
+  최선의 경우는 피벗이 항상 배열을 균등하게 두 부분으로 나누는 경우입니다. 이때도 시간복잡도는 O(n log n)입니다.
 
-- 이 경우에도 분할 단계가 log n 단계만큼 필요하고, 각 단계마다 n번의 비교가 필요하여 최선의 경우 O(n log n)이 됩니다.
+  - 이 경우에도 분할 단계가 log n 단계만큼 필요하고, 각 단계마다 n번의 비교가 필요하여 최선의 경우 O(n log n)이 됩니다.
 
-**최악의 경우 : T(N) = O(N^2)**
+  **최악의 경우 : T(N) = O(N^2)**
 
-- 순환 호출의 깊이(N) x 각 순환 호출 단계의 비교 연산(N) = N^2
+  - 순환 호출의 깊이(N) x 각 순환 호출 단계의 비교 연산(N) = N^2
 
-최악의 경우는 정렬하고자 하는 배열이 오름차순 혹은 내림차순 정렬되어 있고 피벗이 매번 최댓값이나 최솟값이 선택되어 배열이 균등하게 나눠지지 않는 경우입니다.
+  최악의 경우는 정렬하고자 하는 배열이 오름차순 혹은 내림차순 정렬되어 있고 피벗이 매번 최댓값이나 최솟값이 선택되어 배열이 균등하게 나눠지지 않는 경우입니다.
 
-- 비교 횟수 : (N)
+  - 비교 횟수 : (N)
 
-![img](https://github.com/GimunLee/tech-refrigerator/raw/master/Algorithm/resources/quick-sort-003.png)
+  ![img](https://github.com/GimunLee/tech-refrigerator/raw/master/Algorithm/resources/quick-sort-003.png)
 
-레코드의 개수 N이 2의 거듭제곱이라고 가정했을 때(N = 2^k), 순환 호출의 깊이는 N임을 알 수 있다.
+  레코드의 개수 N이 2의 거듭제곱이라고 가정했을 때(N = 2^k), 순환 호출의 깊이는 N임을 알 수 있다.
 
-- 각 순환 호출 단계의 비교 연산
+  - 각 순환 호출 단계의 비교 연산
 
-각 순환 호출에서는 전체 리스트의 대부분의 레코드를 비교해야 하므로 평균 N번 정도의 비교가 이루어진다.
+  각 순환 호출에서는 전체 리스트의 대부분의 레코드를 비교해야 하므로 평균 N번 정도의 비교가 이루어진다.
 
-- 공간 복잡도
+  - 공간 복잡도
 
-주어진 배열 안에서 교환을 통해 정렬이 수행되므로 O(N)이다.
+  주어진 배열 안에서 교환을 통해 정렬이 수행되므로 O(N)이다.
 
-- **장점**:
-  - 빠른 평균 시간복잡도 O(n log n)
-  - 효율적인 메모리 사용 (제자리 정렬)
-  - 분할 정복 전략을 사용하여 큰 문제를 작은 문제로 나눔
-  - 일반적으로 빠른 실행 시간
-  - 파이프라인 및 캐시 성능 최적화
-- **단점**:
-  - 최악 시간복잡도 O(n^2)
-  - 불안정 정렬
-  - 재귀 호출로 인한 스택 오버플로 가능성
-  - 피벗 선택의 중요성
+  - **장점**:
+    - 빠른 평균 시간복잡도 O(n log n)
+    - 효율적인 메모리 사용 (제자리 정렬)
+    - 분할 정복 전략을 사용하여 큰 문제를 작은 문제로 나눔
+    - 일반적으로 빠른 실행 시간
+    - 파이프라인 및 캐시 성능 최적화
+  - **단점**:
+    - 최악 시간복잡도 O(n^2)
+    - 불안정 정렬
+    - 재귀 호출로 인한 스택 오버플로 가능성
+    - 피벗 선택의 중요성
 
-### 미디언 오브 쓰리 (Median of Three)
+  ### 미디언 오브 쓰리 (Median of Three)
 
-미디언 오브 쓰리는 배열의 첫 번째, 중간, 마지막 요소 중 중간값을 피벗으로 선택하는 방법입니다. 이렇게 하면 배열이 어느 정도 정렬되어 있는 경우에도 성능을 향상시킬 수 있습니다.
+  미디언 오브 쓰리는 배열의 첫 번째, 중간, 마지막 요소 중 중간값을 피벗으로 선택하는 방법입니다. 이렇게 하면 배열이 어느 정도 정렬되어 있는 경우에도 성능을 향상시킬 수 있습니다.
 
 
-- 배열이 정렬된 경우에도 비교적 균등한 분할을 보장할 수 있어 최악의 경우를 효과적으로 방지합니다.
-- 피벗 선택을 위한 추가 비교 연산은 있지만, 이는 전체 퀵소트 알고리즘의 효율성을 크게 저하시키지 않습니다.
-- 일반적으로 다양한 배열 패턴에 대해 일관되게 좋은 성능을 보여줍니다.
-
-  </p>
-  <p></p>
+  - 배열이 정렬된 경우에도 비교적 균등한 분할을 보장할 수 있어 최악의 경우를 효과적으로 방지합니다.
+  - 피벗 선택을 위한 추가 비교 연산은 있지만, 이는 전체 퀵소트 알고리즘의 효율성을 크게 저하시키지 않습니다.
+  - 일반적으로 다양한 배열 패턴에 대해 일관되게 좋은 성능을 보여줍니다.</p>
 </details>
 
 <details>
   <summary>시간 복잡도를 계산해주세요.</summary>
   </br>
   <p>코딩테스를 풀었다면 해당 코드에 대해서 시간복잡도를 물어볼 수 있습니다.</p>
-  <p></p>
 </details>
 
 <details>
@@ -1354,9 +1199,6 @@ def qsort(a,left,right):
 
 ### 컨테이너
 
-제가 아직 도커, 쿠버네티스에 익숙하지 않아 공부가 좀 더 필요합니다.  
-관련해서 질문을 받아본적은 없으나, 일반적인 질문을 담아보았습니다.
-
 <details>
   <summary>Docker란 무엇이고 컨테이너 가상화를 왜 사용할까요?</summary>
   </br>
@@ -1370,8 +1212,6 @@ def qsort(a,left,right):
 </details>
 
 ### DevOps
-
-DevOps는 어쩌면 신입에겐 물어보지 않을 수도 있습니다. 하지만 DevOps가 무엇인지 정도는 알아두는게 좋을 것 같습니다.
 
 <details>
   <summary>CI/CD가 무엇인가요? 왜 CI/CD가 장점이 될까요?</summary>
