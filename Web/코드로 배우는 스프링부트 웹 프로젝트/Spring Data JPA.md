@@ -182,4 +182,4 @@ spring.jpa.show-sql=true
 
 **Reference**
 
-- [Spring - ORM, JPA, Hibernate, JDBC 총정리](https://velog.io/@murphytklee/Spring-ORM-JPA-Hibernate-JDBC-%EC%B4%9D%EC%A0%95%EB%A6%AC****)
+- [Spring - ORM, JPA, Hibernate, JDBC 총정리](https://velog.io/@murphytklee/Spring-ORM-JPA-Hibernate-JDBC-%EC%B4%9D%EC%A0%95%EB%A6%AC)
