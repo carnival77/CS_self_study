@@ -28,25 +28,6 @@ CS 전공 지식 스터디 총합 저장소
     - [컨테이너](#컨테이너)
     - [DevOps](#devops)
 
-
-## 정리 내용
-
-### OS
-
-### DB
-
-### Network
-
-### Data Structure
-
-### Algorithm
-
-
-
-### Web
-
-### Java
-
 ## 질문 리스트
 
 ### 네트워크
