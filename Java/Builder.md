@@ -1,5 +1,6 @@
 # Builder
 
+---
 - [Builder](#builder)
     - [1. 빌더 패턴 (Builder Pattern)](#1-빌더-패턴-builder-pattern)
       - [예제 코드 (리마인더)](#예제-코드-리마인더)
@@ -12,6 +13,8 @@
       - [장점](#장점)
       - [고려사항](#고려사항)
     - [요약](#요약)
+  
+---
 
 ### 1. 빌더 패턴 (Builder Pattern)
 
